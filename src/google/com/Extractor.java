@@ -11,8 +11,7 @@ public class Extractor {
             BufferedReader reader = new BufferedReader(new FileReader(f + "//Lex.txt"));
             while (reader.ready()) {
                 String line = reader.readLine();
-                String[] s = line.split(" ");
-                check v=new check(s);
+                Check v=new Check(line);
             }
             reader.close();
         } catch(
