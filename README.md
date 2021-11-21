@@ -1,5 +1,5 @@
 # Compiler_project
-This repository contains the C compiler designed in java, as part of the course Compiler Construction at Isfahan University.
+This repository contains the C compiler designed in java, as part of the Compiler Construction course at Isfahan University.
 
 ## Phases
 This project consist of 3 phases:
