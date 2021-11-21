@@ -1,2 +1,2 @@
 # Compiler_project
-complete readme
+This repository contains the C compiler designed in java 
