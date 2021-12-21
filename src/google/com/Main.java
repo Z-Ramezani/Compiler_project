@@ -389,6 +389,10 @@ public class Main {
         dfa_state[44][10] = -1; dfa_state[44][11] = -1; dfa_state[44][12] = -1; dfa_state[44][13] = -1; dfa_state[44][14] = -1;
         dfa_state[44][15] = -1; dfa_state[44][16] = -1; dfa_state[44][17] = -1; dfa_state[44][18] = -1; dfa_state[44][19] = -1;
         dfa_state[44][20] = -1; dfa_state[44][21] = -1; dfa_state[44][22] = -1; dfa_state[44][23] = -1; dfa_state[44][24] = -1;
+        dfa_state[44][20] = -1; dfa_state[44][21] = -1; dfa_state[44][22] = -1; dfa_state[44][23] = -1; dfa_state[44][24] = -1;
+        dfa_state[44][20] = -1; dfa_state[44][21] = -1; dfa_state[44][22] = -1; dfa_state[44][23] = -1; dfa_state[44][24] = -1;
+        dfa_state[44][20] = -1; dfa_state[44][21] = -1; dfa_state[44][22] = -1; dfa_state[44][23] = -1; dfa_state[44][24] = -1;
+        dfa_state[44][20] = -1; dfa_state[44][21] = -1; dfa_state[44][22] = -1; dfa_state[44][23] = -1; dfa_state[44][24] = -1;
 
 
     }
