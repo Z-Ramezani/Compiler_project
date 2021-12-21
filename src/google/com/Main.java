@@ -376,6 +376,20 @@ public class Main {
         dfa_state[42][15] = -1; dfa_state[42][16] = -1; dfa_state[42][17] = -1; dfa_state[42][18] = -1; dfa_state[42][19] = -1;
         dfa_state[42][20] = -1; dfa_state[42][21] = -1; dfa_state[42][22] = -1; dfa_state[42][23] = -1; dfa_state[42][24] = -1;
 
+        //state43
+        dfa_state[43][0] = 42; dfa_state[43][1] = 42; dfa_state[43][2] = 42; dfa_state[43][3] = 70; dfa_state[43][4] = 70;
+        dfa_state[43][5] = 70; dfa_state[43][6] = 70; dfa_state[43][7] = 70; dfa_state[43][8] = 70; dfa_state[43][9] = 42;
+        dfa_state[43][10] = 70; dfa_state[43][11] = 70; dfa_state[43][12] = 70; dfa_state[43][13] = 70; dfa_state[43][14] = 70;
+        dfa_state[43][15] = 70; dfa_state[43][16] = 70; dfa_state[43][17] = 70; dfa_state[43][18] = 70; dfa_state[43][19] = 70;
+        dfa_state[43][20] = 70; dfa_state[43][21] = 70; dfa_state[43][22] = 70; dfa_state[43][23] = 70; dfa_state[43][24] = 42;
+
+        //state44
+        dfa_state[44][0] = -1; dfa_state[44][1] = -1; dfa_state[44][2] = -1; dfa_state[44][3] = -1; dfa_state[42][4] = -1;
+        dfa_state[44][5] = -1; dfa_state[44][6] = -1; dfa_state[44][7] = -1; dfa_state[42][8] = -1; dfa_state[42][9] = -1;
+        dfa_state[44][10] = -1; dfa_state[44][11] = -1; dfa_state[44][12] = -1; dfa_state[42][13] = -1; dfa_state[42][14] = -1;
+        dfa_state[44][15] = -1; dfa_state[44][16] = -1; dfa_state[44][17] = -1; dfa_state[42][18] = -1; dfa_state[42][19] = -1;
+        dfa_state[44][20] = -1; dfa_state[44][21] = -1; dfa_state[44][22] = -1; dfa_state[42][23] = -1; dfa_state[42][24] = -1;
+
 
     }
 
