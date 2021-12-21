@@ -5,8 +5,8 @@ public class newCheck extends Main{
 
     newCheck(String s) {
         int index_first = 0, index_current = 0;
-        while (index_first < s.length()) {
+        /*while (index_first < s.length()) {
 
-        }
+        }*/
     }
 }

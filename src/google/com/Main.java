@@ -381,7 +381,7 @@ public class Main {
 
     public static void main(String[] args) {
         File a = getDataFolderFromSystem();
-        Extractor EX = new Extractor();
+        //Extractor EX = new Extractor();
         setLetter(letter);
         setDigit(digit);
         setKey(keyword);
