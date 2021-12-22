@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fba2d3b-4ab8-4098-802a-e0831bdedb07" name="Default Changelist" comment="Class Check &amp; Main">
-      <change afterPath="$PROJECT_DIR$/src/google/com/newCheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/google/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/google/com/newCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/newCheck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.lexicalAnalysis">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="google.com.Main" />
       <module name="Compiler" />
@@ -67,8 +67,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lexicalAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="google.com.lexicalAnalysis" />
+      <module name="Compiler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="google.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lexicalAnalysis" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -152,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640076777832</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Class Check &amp; Main">
+      <created>1640078082159</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640078082159</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

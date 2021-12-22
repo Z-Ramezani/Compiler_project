@@ -377,11 +377,11 @@ public class Main {
         dfa_state[42][20] = -1; dfa_state[42][21] = -1; dfa_state[42][22] = -1; dfa_state[42][23] = -1; dfa_state[42][24] = -1;
 
         //state43
-        dfa_state[43][0] = 42; dfa_state[43][1] = 42; dfa_state[43][2] = 42; dfa_state[43][3] = 70; dfa_state[43][4] = 70;
-        dfa_state[43][5] = 70; dfa_state[43][6] = 70; dfa_state[43][7] = 70; dfa_state[43][8] = 70; dfa_state[43][9] = 42;
+        dfa_state[43][0] = 44; dfa_state[43][1] = 44; dfa_state[43][2] = 44; dfa_state[43][3] = 70; dfa_state[43][4] = 70;
+        dfa_state[43][5] = 70; dfa_state[43][6] = 70; dfa_state[43][7] = 70; dfa_state[43][8] = 44; dfa_state[43][9] = 44;
         dfa_state[43][10] = 70; dfa_state[43][11] = 70; dfa_state[43][12] = 70; dfa_state[43][13] = 70; dfa_state[43][14] = 70;
         dfa_state[43][15] = 70; dfa_state[43][16] = 70; dfa_state[43][17] = 70; dfa_state[43][18] = 70; dfa_state[43][19] = 70;
-        dfa_state[43][20] = 70; dfa_state[43][21] = 70; dfa_state[43][22] = 70; dfa_state[43][23] = 70; dfa_state[43][24] = 42;
+        dfa_state[43][20] = 70; dfa_state[43][21] = 70; dfa_state[43][22] = 44; dfa_state[43][23] = 44; dfa_state[43][24] = 44;
 
         //state44
         dfa_state[44][0] = -1; dfa_state[44][1] = -1; dfa_state[44][2] = -1; dfa_state[44][3] = -1; dfa_state[44][4] = -1;
@@ -389,17 +389,58 @@ public class Main {
         dfa_state[44][10] = -1; dfa_state[44][11] = -1; dfa_state[44][12] = -1; dfa_state[44][13] = -1; dfa_state[44][14] = -1;
         dfa_state[44][15] = -1; dfa_state[44][16] = -1; dfa_state[44][17] = -1; dfa_state[44][18] = -1; dfa_state[44][19] = -1;
         dfa_state[44][20] = -1; dfa_state[44][21] = -1; dfa_state[44][22] = -1; dfa_state[44][23] = -1; dfa_state[44][24] = -1;
-        dfa_state[44][20] = -1; dfa_state[44][21] = -1; dfa_state[44][22] = -1; dfa_state[44][23] = -1; dfa_state[44][24] = -1;
-        dfa_state[44][20] = -1; dfa_state[44][21] = -1; dfa_state[44][22] = -1; dfa_state[44][23] = -1; dfa_state[44][24] = -1;
-        dfa_state[44][20] = -1; dfa_state[44][21] = -1; dfa_state[44][22] = -1; dfa_state[44][23] = -1; dfa_state[44][24] = -1;
-        dfa_state[44][20] = -1; dfa_state[44][21] = -1; dfa_state[44][22] = -1; dfa_state[44][23] = -1; dfa_state[44][24] = -1;
+
+        //state45
+        dfa_state[45][0] = 46; dfa_state[45][1] = 46; dfa_state[45][2] = 46; dfa_state[45][3] = 70; dfa_state[45][4] = 70;
+        dfa_state[45][5] = 70; dfa_state[45][6] = 70; dfa_state[45][7] = 70; dfa_state[45][8] = 46; dfa_state[45][9] = 46;
+        dfa_state[45][10] = 70; dfa_state[45][11] = 70; dfa_state[45][12] = 70; dfa_state[45][13] = 70; dfa_state[45][14] = 70;
+        dfa_state[45][15] = 70; dfa_state[45][16] = 70; dfa_state[45][17] = 70; dfa_state[45][18] = 70; dfa_state[45][19] = 70;
+        dfa_state[45][20] = 70; dfa_state[45][21] = 70; dfa_state[45][22] = 46; dfa_state[45][23] = 46; dfa_state[45][24] = 46;
+
+        //state46
+        dfa_state[46][0] = -1; dfa_state[46][1] = -1; dfa_state[46][2] = -1; dfa_state[46][3] = -1; dfa_state[46][4] = -1;
+        dfa_state[46][5] = -1; dfa_state[46][6] = -1; dfa_state[46][7] = -1; dfa_state[46][8] = -1; dfa_state[46][9] = -1;
+        dfa_state[46][10] = -1; dfa_state[46][11] = -1; dfa_state[46][12] = -1; dfa_state[46][13] = -1; dfa_state[46][14] = -1;
+        dfa_state[46][15] = -1; dfa_state[46][16] = -1; dfa_state[46][17] = -1; dfa_state[46][18] = -1; dfa_state[46][19] = -1;
+        dfa_state[46][20] = -1; dfa_state[46][21] = -1; dfa_state[46][22] = -1; dfa_state[46][23] = -1; dfa_state[46][24] = -1;
+
+        //state47
+        dfa_state[47][0] = 48; dfa_state[47][1] = 48; dfa_state[47][2] = 48; dfa_state[47][3] = 70; dfa_state[47][4] = 70;
+        dfa_state[47][5] = 70; dfa_state[47][6] = 70; dfa_state[47][7] = 70; dfa_state[47][8] = 70; dfa_state[47][9] = 70;
+        dfa_state[47][10] = 48; dfa_state[47][11] = 48; dfa_state[47][12] = 70; dfa_state[47][13] = 70; dfa_state[47][14] = 70;
+        dfa_state[47][15] = 70; dfa_state[47][16] = 70; dfa_state[47][17] = 70; dfa_state[47][18] = 70; dfa_state[47][19] = 70;
+        dfa_state[47][20] = 70; dfa_state[47][21] = 70; dfa_state[47][22] = 48; dfa_state[47][23] = 48; dfa_state[47][24] = 48;
+
+        //state48
+        dfa_state[48][0] = -1; dfa_state[48][1] = -1; dfa_state[48][2] = -1; dfa_state[48][3] = -1; dfa_state[48][4] = -1;
+        dfa_state[48][5] = -1; dfa_state[48][6] = -1; dfa_state[48][7] = -1; dfa_state[48][8] = -1; dfa_state[48][9] = -1;
+        dfa_state[48][10] = -1; dfa_state[48][11] = -1; dfa_state[48][12] = -1; dfa_state[48][13] = -1; dfa_state[48][14] = -1;
+        dfa_state[48][15] = -1; dfa_state[48][16] = -1; dfa_state[48][17] = -1; dfa_state[48][18] = -1; dfa_state[48][19] = -1;
+        dfa_state[48][20] = -1; dfa_state[48][21] = -1; dfa_state[48][22] = -1; dfa_state[48][23] = -1; dfa_state[48][24] = -1;
+
+        //state49
+        dfa_state[49][0] = 50; dfa_state[49][1] = 50; dfa_state[49][2] = 50; dfa_state[49][3] = 70; dfa_state[49][4] = 70;
+        dfa_state[49][5] = 70; dfa_state[49][6] = 70; dfa_state[49][7] = 70; dfa_state[49][8] = 70; dfa_state[49][9] = 70;
+        dfa_state[49][10] = 50; dfa_state[49][11] = 50; dfa_state[49][12] = 70; dfa_state[49][13] = 70; dfa_state[49][14] = 70;
+        dfa_state[49][15] = 70; dfa_state[49][16] = 70; dfa_state[49][17] = 70; dfa_state[49][18] = 70; dfa_state[49][19] = 70;
+        dfa_state[49][20] = 70; dfa_state[49][21] = 70; dfa_state[49][22] = 50; dfa_state[49][23] = 50; dfa_state[49][24] = 50;
+
+        //state50
+        dfa_state[50][0] = -1; dfa_state[50][1] = -1; dfa_state[50][2] = -1; dfa_state[50][3] = -1; dfa_state[50][4] = -1;
+        dfa_state[50][5] = -1; dfa_state[50][6] = -1; dfa_state[50][7] = -1; dfa_state[50][8] = -1; dfa_state[50][9] = -1;
+        dfa_state[50][10] = -1; dfa_state[50][11] = -1; dfa_state[50][12] = -1; dfa_state[50][13] = -1; dfa_state[50][14] = -1;
+        dfa_state[50][15] = -1; dfa_state[50][16] = -1; dfa_state[50][17] = -1; dfa_state[50][18] = -1; dfa_state[50][19] = -1;
+        dfa_state[50][20] = -1; dfa_state[50][21] = -1; dfa_state[50][22] = -1; dfa_state[50][23] = -1; dfa_state[50][24] = -1;
+
+
+
 
 
     }
 
     public static void main(String[] args) {
         File a = getDataFolderFromSystem();
-        //Extractor EX = new Extractor();
+        Extractor EX = new Extractor();
         setLetter(letter);
         setDigit(digit);
         setKey(keyword);
