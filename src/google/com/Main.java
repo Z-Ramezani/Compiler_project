@@ -432,9 +432,145 @@ public class Main {
         dfa_state[50][15] = -1; dfa_state[50][16] = -1; dfa_state[50][17] = -1; dfa_state[50][18] = -1; dfa_state[50][19] = -1;
         dfa_state[50][20] = -1; dfa_state[50][21] = -1; dfa_state[50][22] = -1; dfa_state[50][23] = -1; dfa_state[50][24] = -1;
 
+        //state51
+        dfa_state[51][0] = 51; dfa_state[51][1] = 51; dfa_state[51][2] = 51; dfa_state[51][3] = 70; dfa_state[51][4] = 70;
+        dfa_state[51][5] = 70; dfa_state[51][6] = 70; dfa_state[51][7] = 70; dfa_state[51][8] = 70; dfa_state[51][9] = 51;
+        dfa_state[51][10] = 51; dfa_state[51][11] = 70; dfa_state[51][12] = 70; dfa_state[51][13] = 70; dfa_state[51][14] = 70;
+        dfa_state[51][15] = 50; dfa_state[51][16] = 70; dfa_state[51][17] = 70; dfa_state[51][18] = 70; dfa_state[51][19] = 70;
+        dfa_state[51][20] = 70; dfa_state[51][21] = 70; dfa_state[51][22] = 52; dfa_state[51][23] = 52; dfa_state[51][24] = 52;
 
+       //state52
+        dfa_state[52][0] = -1; dfa_state[52][1] = -1; dfa_state[52][2] = -1; dfa_state[52][3] = -1; dfa_state[52][4] = -1;
+        dfa_state[52][5] = -1; dfa_state[52][6] = -1; dfa_state[52][7] = -1; dfa_state[52][8] = -1; dfa_state[52][9] = -1;
+        dfa_state[52][10] = -1; dfa_state[52][11] = -1; dfa_state[52][12] = -1; dfa_state[52][13] = -1; dfa_state[52][14] = -1;
+        dfa_state[52][15] = -1; dfa_state[52][16] = -1; dfa_state[52][17] = -1; dfa_state[52][18] = -1; dfa_state[52][19] = -1;
+        dfa_state[52][20] = -1; dfa_state[52][21] = -1; dfa_state[52][22] = -1; dfa_state[52][23] = -1; dfa_state[52][24] = -1;
 
+      //state53
+        dfa_state[53][0] = 54; dfa_state[53][1] = 54; dfa_state[53][2] = 54; dfa_state[53][3] = 70; dfa_state[53][4] = 70;
+        dfa_state[53][5] = 70; dfa_state[53][6] = 70; dfa_state[53][7] = 70; dfa_state[53][8] = 70; dfa_state[53][9] = 70;
+        dfa_state[53][10] = 70; dfa_state[53][11] = 54; dfa_state[53][12] = 70; dfa_state[53][13] = 70; dfa_state[53][14] = 70;
+        dfa_state[53][15] = 70; dfa_state[53][16] = 70; dfa_state[53][17] = 70; dfa_state[53][18] = 70; dfa_state[53][19] = 70;
+        dfa_state[53][20] = 70; dfa_state[53][21] = 70; dfa_state[53][22] = 54; dfa_state[53][23] = 54; dfa_state[53][24] = 54;
 
+        //state54
+        dfa_state[54][0] = -1; dfa_state[54][1] = -1; dfa_state[54][2] = -1; dfa_state[54][3] = -1; dfa_state[54][4] = -1;
+        dfa_state[54][5] = -1; dfa_state[54][6] = -1; dfa_state[54][7] = -1; dfa_state[54][8] = -1; dfa_state[54][9] = -1;
+        dfa_state[54][10] = -1; dfa_state[54][11] = -1; dfa_state[54][12] = -1; dfa_state[54][13] = -1; dfa_state[54][14] = -1;
+        dfa_state[54][15] = -1; dfa_state[54][16] = -1; dfa_state[54][17] = -1; dfa_state[54][18] = -1; dfa_state[54][19] = -1;
+        dfa_state[54][20] = -1; dfa_state[54][21] = -1; dfa_state[54][22] = -1; dfa_state[54][23] = -1; dfa_state[54][24] = -1;
+
+        //state55
+        dfa_state[55][0] = 70; dfa_state[55][1] = 70; dfa_state[55][2] = 70; dfa_state[55][3] = 70; dfa_state[55][4] = 70;
+        dfa_state[55][5] = 70; dfa_state[55][6] = 70; dfa_state[55][7] = 70; dfa_state[55][8] = 70; dfa_state[55][9] = 70;
+        dfa_state[55][10] = 70; dfa_state[55][11] = 70; dfa_state[55][12] = 70; dfa_state[55][13] = 70; dfa_state[55][14] = 70;
+        dfa_state[55][15] = 70; dfa_state[55][16] = 70; dfa_state[55][17] = 70; dfa_state[55][18] = 70; dfa_state[55][19] = 70;
+        dfa_state[55][20] = 70; dfa_state[55][21] = 70; dfa_state[55][22] = 70; dfa_state[55][23] = 70; dfa_state[55][24] = 70;
+
+        //state56
+        dfa_state[56][0] = 70; dfa_state[56][1] = 70; dfa_state[56][2] = 70; dfa_state[56][3] = 70; dfa_state[56][4] = 70;
+        dfa_state[56][5] = 70; dfa_state[56][6] = 70; dfa_state[56][7] = 70; dfa_state[56][8] = 70; dfa_state[56][9] = 70;
+        dfa_state[56][10] = 70; dfa_state[56][11] = 70; dfa_state[56][12] = 70; dfa_state[56][13] = 70; dfa_state[56][14] = 70;
+        dfa_state[56][15] = 70; dfa_state[56][16] = 70; dfa_state[56][17] = 70; dfa_state[56][18] = 70; dfa_state[56][19] = 70;
+        dfa_state[56][20] = 70; dfa_state[56][21] = 70; dfa_state[56][22] = 70; dfa_state[56][23] = 70; dfa_state[56][24] = 70;
+
+        //state57
+        dfa_state[57][0] = 59 ; dfa_state[57][1] = 59; dfa_state[57][2] = 59; dfa_state[57][3] = 70; dfa_state[57][4] = 70;
+        dfa_state[57][5] = 70; dfa_state[57][6] = 70; dfa_state[57][7] = 70; dfa_state[57][8] = 70; dfa_state[57][9] = 59;
+        dfa_state[57][10] = 70; dfa_state[57][11] = 70; dfa_state[57][12] = 70; dfa_state[57][13] = 70; dfa_state[57][14] = 70;
+        dfa_state[57][15] = 70; dfa_state[57][16] = 70; dfa_state[57][17] = 58; dfa_state[57][18] = 70; dfa_state[57][19] = 70;
+        dfa_state[57][20] = 70; dfa_state[57][21] = 70; dfa_state[57][22] = 70; dfa_state[57][23] = 70; dfa_state[57][24] = 59;
+
+        //state58
+        dfa_state[58][0] = 59; dfa_state[58][1] = 59; dfa_state[58][2] = 59; dfa_state[58][3] = 70; dfa_state[58][4] = 70;
+        dfa_state[58][5] = 70; dfa_state[58][6] = 70; dfa_state[58][7] = 70; dfa_state[58][8] = 70; dfa_state[58][9] = 59;
+        dfa_state[58][10] = 70; dfa_state[58][11] = 70; dfa_state[58][12] = 70; dfa_state[58][13] = 70; dfa_state[58][14] = 70;
+        dfa_state[58][15] = 70; dfa_state[58][16] = 70; dfa_state[58][17] = 70; dfa_state[58][18] = 70; dfa_state[58][19] = 70;
+        dfa_state[58][20] = 70; dfa_state[58][21] = 70; dfa_state[58][22] = 70; dfa_state[58][23] = 70; dfa_state[58][24] = 59;
+
+        //state59
+        dfa_state[59][0] = -1; dfa_state[59][1] = -1; dfa_state[59][2] = -1; dfa_state[59][3] = -1; dfa_state[59][4] = -1;
+        dfa_state[59][5] = -1; dfa_state[59][6] = -1; dfa_state[59][7] = -1; dfa_state[59][8] = -1; dfa_state[59][9] = -1;
+        dfa_state[59][10] = -1; dfa_state[59][11] = -1; dfa_state[59][12] = -1; dfa_state[59][13] = -1; dfa_state[59][14] = -1;
+        dfa_state[59][15] = -1; dfa_state[59][16] = -1; dfa_state[59][17] = -1; dfa_state[59][18] = -1; dfa_state[59][19] = -1;
+        dfa_state[59][20] = -1; dfa_state[59][21] = -1; dfa_state[59][22] = -1; dfa_state[59][23] = -1; dfa_state[59][24] = -1;
+
+        //state60
+        dfa_state[60][0] = 62; dfa_state[60][1] = 62; dfa_state[60][2] = 62; dfa_state[60][3] = 70; dfa_state[60][4] = 70;
+        dfa_state[60][5] = 70; dfa_state[60][6] = 70; dfa_state[60][7] = 70; dfa_state[60][8] = 70; dfa_state[60][9] = 62;
+        dfa_state[60][10] = 70; dfa_state[60][11] = 70; dfa_state[60][12] = 70; dfa_state[60][13] = 70; dfa_state[60][14] = 70;
+        dfa_state[60][15] = 70; dfa_state[60][16] = 70; dfa_state[60][17] = 70; dfa_state[60][18] = 70; dfa_state[60][19] = 70;
+        dfa_state[60][20] = 70; dfa_state[60][21] = 70; dfa_state[60][22] = 70; dfa_state[60][23] = 70; dfa_state[60][24] = 62;
+
+        //state61
+        dfa_state[61][0] = 62; dfa_state[61][1] = 62; dfa_state[61][2] = 62; dfa_state[61][3] = 70; dfa_state[61][4] = 70;
+        dfa_state[61][5] = 70; dfa_state[61][6] = 70; dfa_state[61][7] = 70; dfa_state[61][8] = 70; dfa_state[61][9] = 70;
+        dfa_state[61][10] = 70; dfa_state[61][11] = 70; dfa_state[61][12] = 70; dfa_state[61][13] = 70; dfa_state[61][14] = 70;
+        dfa_state[61][15] = 70; dfa_state[61][16] = 70; dfa_state[61][17] = 70; dfa_state[61][18] = 70; dfa_state[61][19] = 70;
+        dfa_state[61][20] = 70; dfa_state[61][21] = 70; dfa_state[61][22] = 70; dfa_state[61][23] = 70; dfa_state[61][24] = 62;
+
+        //state62
+        dfa_state[62][0] = -1; dfa_state[62][1] = -1; dfa_state[62][2] = -1; dfa_state[62][3] = -1; dfa_state[62][4] = -1;
+        dfa_state[62][5] = -1; dfa_state[62][6] = -1; dfa_state[62][7] = -1; dfa_state[62][8] = -1; dfa_state[62][9] = -1;
+        dfa_state[62][10] = -1; dfa_state[62][11] = -1; dfa_state[62][12] = -1; dfa_state[62][13] = -1; dfa_state[62][14] = -1;
+        dfa_state[62][15] = -1; dfa_state[62][16] = -1; dfa_state[62][17] = -1; dfa_state[62][18] = -1; dfa_state[62][19] = -1;
+        dfa_state[62][20] = -1; dfa_state[62][21] = -1; dfa_state[62][22] = -1; dfa_state[62][23] = -1; dfa_state[62][24] = -1;
+
+        //state63
+        dfa_state[63][0] = 65; dfa_state[63][1] = 65; dfa_state[63][2] = 65; dfa_state[63][3] = 70; dfa_state[63][4] = 70;
+        dfa_state[63][5] = 64; dfa_state[63][6] = 70; dfa_state[63][7] = 70; dfa_state[63][8] = 70; dfa_state[63][9] = 65;
+        dfa_state[63][10] = 70; dfa_state[63][11] = 70; dfa_state[63][12] = 70; dfa_state[63][13] = 70; dfa_state[63][14] = 70;
+        dfa_state[63][15] = 70; dfa_state[63][16] = 70; dfa_state[63][17] = 70; dfa_state[63][18] = 70; dfa_state[63][19] = 70;
+        dfa_state[63][20] = 70; dfa_state[63][21] = 70; dfa_state[63][22] = 70; dfa_state[63][23] = 70; dfa_state[63][24] = 65;
+
+        //state64
+        dfa_state[64][0] = 65; dfa_state[64][1] = 65; dfa_state[64][2] = 65; dfa_state[64][3] = 70; dfa_state[64][4] = 70;
+        dfa_state[64][5] = 70; dfa_state[64][6] = 70; dfa_state[64][7] = 70; dfa_state[64][8] = 70; dfa_state[64][9] = 65;
+        dfa_state[64][10] = 70; dfa_state[64][11] = 70; dfa_state[64][12] = 70; dfa_state[64][13] = 70; dfa_state[64][14] = 70;
+        dfa_state[64][15] = 70; dfa_state[64][16] = 70; dfa_state[64][17] = 70; dfa_state[64][18] = 70; dfa_state[64][19] = 70;
+        dfa_state[64][20] = 70; dfa_state[64][21] = 70; dfa_state[64][22] = 70; dfa_state[64][23] = 70; dfa_state[64][24] = 65;
+
+        //state65
+        dfa_state[65][0] = 70; dfa_state[65][1] = 70; dfa_state[65][2] = 70; dfa_state[65][3] = 70; dfa_state[65][4] = 70;
+        dfa_state[65][5] = 70; dfa_state[65][6] = 70; dfa_state[65][7] = 70; dfa_state[65][8] = 70; dfa_state[65][9] = 70;
+        dfa_state[65][10] = 70; dfa_state[65][11] = 70; dfa_state[65][12] = 70; dfa_state[65][13] = 70; dfa_state[65][14] = 70;
+        dfa_state[65][15] = 70; dfa_state[65][16] = 70; dfa_state[65][17] = 70; dfa_state[65][18] = 70; dfa_state[65][19] = 70;
+        dfa_state[65][20] = 70; dfa_state[65][21] = 70; dfa_state[65][22] = 70; dfa_state[65][23] = 70; dfa_state[65][24] = 70;
+
+        //state66
+        dfa_state[66][0] = 67; dfa_state[66][1] = 67; dfa_state[66][2] = 67; dfa_state[66][3] = 67; dfa_state[66][4] = 67;
+        dfa_state[66][5] = 67; dfa_state[66][6] = 67; dfa_state[66][7] = 67; dfa_state[66][8] = 67; dfa_state[66][9] = 67;
+        dfa_state[66][10] = 67; dfa_state[66][11] = 67; dfa_state[66][12] = 67; dfa_state[66][13] = 67; dfa_state[66][14] = 67;
+        dfa_state[66][15] = 67; dfa_state[66][16] = 67; dfa_state[66][17] = 67; dfa_state[66][18] = 67; dfa_state[66][19] = 67;
+        dfa_state[66][20] = 67; dfa_state[66][21] = 67; dfa_state[66][22] = 67; dfa_state[66][23] = 67; dfa_state[66][24] = 67;
+
+        //state67
+        dfa_state[67][0] = -1; dfa_state[67][1] = -1; dfa_state[67][2] = -1; dfa_state[67][3] = -1; dfa_state[67][4] = -1;
+        dfa_state[67][5] = -1; dfa_state[67][6] = -1; dfa_state[67][7] = -1; dfa_state[67][8] = -1; dfa_state[67][9] = -1;
+        dfa_state[67][10] = -1; dfa_state[67][11] = -1; dfa_state[67][12] = -1; dfa_state[67][13] = -1; dfa_state[67][14] = -1;
+        dfa_state[67][15] = -1; dfa_state[67][16] = -1; dfa_state[67][17] = -1; dfa_state[67][18] = -1; dfa_state[67][19] = -1;
+        dfa_state[67][20] = -1; dfa_state[67][21] = -1; dfa_state[67][22] = -1; dfa_state[67][23] = -1; dfa_state[67][24] = -1;
+
+        //state68
+        dfa_state[68][0] = 69; dfa_state[68][1] = 69; dfa_state[68][2] = 69; dfa_state[68][3] = 69; dfa_state[68][4] = 69;
+        dfa_state[68][5] = 69; dfa_state[68][6] = 69; dfa_state[68][7] = 69; dfa_state[68][8] = 69; dfa_state[68][9] = 69;
+        dfa_state[68][10] = 69; dfa_state[68][11] = 69; dfa_state[68][12] = 69; dfa_state[68][13] = 69; dfa_state[68][14] = 69;
+        dfa_state[68][15] = 69; dfa_state[68][16] = 69; dfa_state[68][17] = 69; dfa_state[68][18] = 69; dfa_state[68][19] = 69;
+        dfa_state[68][20] = 69; dfa_state[68][21] = 69; dfa_state[68][22] = 69; dfa_state[68][23] = 69; dfa_state[68][24] = 69;
+
+        //state69
+        dfa_state[69][0] = -1; dfa_state[69][1] = -1; dfa_state[69][2] = -1; dfa_state[69][3] = -1; dfa_state[69][4] = -1;
+        dfa_state[69][5] = -1; dfa_state[69][6] = -1; dfa_state[69][7] = -1; dfa_state[69][8] = -1; dfa_state[69][9] = -1;
+        dfa_state[69][10] = -1; dfa_state[69][11] = -1; dfa_state[69][12] = -1; dfa_state[69][13] = -1; dfa_state[69][14] = -1;
+        dfa_state[69][15] = -1; dfa_state[69][16] = -1; dfa_state[69][17] = -1; dfa_state[69][18] = -1; dfa_state[69][19] = -1;
+        dfa_state[69][20] = -1; dfa_state[69][21] = -1; dfa_state[69][22] = -1; dfa_state[69][23] = -1; dfa_state[69][24] = -1;
+
+        //state70
+        dfa_state[70][0] = 70; dfa_state[70][1] = 70; dfa_state[70][2] = 70; dfa_state[70][3] = 70; dfa_state[70][4] = 70;
+        dfa_state[70][5] = 70; dfa_state[70][6] = 70; dfa_state[70][7] = 70; dfa_state[70][8] = 70; dfa_state[70][9] = 70;
+        dfa_state[70][10] = 70; dfa_state[70][11] = 70; dfa_state[70][12] = 70; dfa_state[70][13] = 70; dfa_state[70][14] = 70;
+        dfa_state[70][15] = 70; dfa_state[70][16] = 70; dfa_state[70][17] = 70; dfa_state[70][18] = 70; dfa_state[70][19] = 70;
+        dfa_state[70][20] = 70; dfa_state[70][21] = 70; dfa_state[70][22] = 70; dfa_state[70][23] = 70; dfa_state[70][24] = 70;
 
     }
 
