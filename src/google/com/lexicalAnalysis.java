@@ -13,7 +13,7 @@ public class lexicalAnalysis extends Main{
              String  token = "";
              char c = s.charAt(i);
              int int_state = 0, int_c = defineChar(c);
-             System.out.println("333333");
+
              if (int_c == -1) {
                  token_error.add("error");
                  i++;

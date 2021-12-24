@@ -12,7 +12,7 @@ public class Extractor {
             File file = new File("D:\\New folder\\Lex.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));
             while (reader.ready()) {
-                System.out.println("111111");
+
                 String line = reader.readLine();
                 lexicalAnalysis v=new lexicalAnalysis();
               LinkedList result= v.lexicalAnalysis(line);
