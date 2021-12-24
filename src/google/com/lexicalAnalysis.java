@@ -1,12 +1,14 @@
 package google.com;
 
+
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class lexicalAnalysis extends Main{
-    LinkedList<String> token_error = new LinkedList<String>();
+    ArrayList<String> token_error = new ArrayList<String>();
+    SymbolTable symbolTable = new SymbolTable();
 
-
-    public LinkedList<String> lexicalAnalysis(String s) {
+    public ArrayList<String> lexicalAnalysis(String s, int count) {
          int i = 0;
 
          while (i < s.length()) {
@@ -33,7 +35,20 @@ public class lexicalAnalysis extends Main{
 
 
              if (dfa_state[int_state][int_c] == -1) {
-                 if (!token.equals(" ")) token_error.add(token);
+                 if (!token.equals(" ")) {
+                     if (!keyword.contains(token)) {
+                         String type = null;
+                         token_error.add(token);
+                         for (int ind = token_error.indexOf(token) - 1; ind >= 0; ind--) {
+                             if (keyword_type.contains(token_error.get(ind))) {
+                                 type = token_error.get(ind);
+                                 break;
+                             }
+                         }
+
+                         symbolTable.setSymbol_table(count, "identifier", type, token);
+                     }
+                 }
              }
            else token_error.add("error");
          }

@@ -8,7 +8,9 @@ import java.util.HashSet;
 public class Main {
 
     static HashSet<Character> operator = new HashSet<Character>();
-    static HashSet<String> keyword = new HashSet<String>();
+    public static HashSet<String> keyword = new HashSet<String>();
+    public static HashSet<String> keyword_type = new HashSet<String>();
+    public static HashSet<String> keyword_no_type = new HashSet<String>();
     static HashSet<Character> letter = new HashSet<Character>();
     static HashSet<Character> digit = new HashSet<Character>();
     static HashSet<Integer> final_state = new HashSet<Integer>();
@@ -60,6 +62,19 @@ public class Main {
         key.add("int");    key.add("long");     key.add("double");   key.add("float");
         key.add("return"); key.add("break");    key.add("for");      key.add("short");
         key.add("char");   key.add("const");    key.add("continue"); key.add("default");
+        key.add("do");     key.add("register"); key.add("signed");   key.add("sizeof");
+        key.add("case");   key.add("static");   key.add("struct");   key.add("typedef");
+        key.add("union");  key.add("unsigned"); key.add("extern");   key.add("enum");
+        key.add("goto");   key.add("auto");     key.add("void");     key.add("main");
+    }
+    static void setKeyword_type(HashSet<String> key){
+        key.add("int");    key.add("long");     key.add("double");   key.add("float");
+        key.add("short");   key.add("char");
+    }
+    static void setKeyword_no_type(HashSet<String> key){
+        key.add("if");     key.add("else");     key.add("while");    key.add("switch");
+        key.add("return"); key.add("break");    key.add("for");
+        key.add("const");    key.add("continue"); key.add("default");
         key.add("do");     key.add("register"); key.add("signed");   key.add("sizeof");
         key.add("case");   key.add("static");   key.add("struct");   key.add("typedef");
         key.add("union");  key.add("unsigned"); key.add("extern");   key.add("enum");
@@ -379,7 +394,7 @@ public class Main {
         //state43
         dfa_state[43][0] = 44; dfa_state[43][1] = 44; dfa_state[43][2] = 44; dfa_state[43][3] = 70; dfa_state[43][4] = 70;
         dfa_state[43][5] = 70; dfa_state[43][6] = 70; dfa_state[43][7] = 70; dfa_state[43][8] = 44; dfa_state[43][9] = 44;
-        dfa_state[43][10] = 70; dfa_state[43][11] = 70; dfa_state[43][12] = 70; dfa_state[43][13] = 70; dfa_state[43][14] = 70;
+        dfa_state[43][10] = 70; dfa_state[43][11] = 44; dfa_state[43][12] = 70; dfa_state[43][13] = 70; dfa_state[43][14] = 70;
         dfa_state[43][15] = 70; dfa_state[43][16] = 70; dfa_state[43][17] = 70; dfa_state[43][18] = 70; dfa_state[43][19] = 70;
         dfa_state[43][20] = 70; dfa_state[43][21] = 70; dfa_state[43][22] = 44; dfa_state[43][23] = 44; dfa_state[43][24] = 44;
 
@@ -393,7 +408,7 @@ public class Main {
         //state45
         dfa_state[45][0] = 46; dfa_state[45][1] = 46; dfa_state[45][2] = 46; dfa_state[45][3] = 70; dfa_state[45][4] = 70;
         dfa_state[45][5] = 70; dfa_state[45][6] = 70; dfa_state[45][7] = 70; dfa_state[45][8] = 46; dfa_state[45][9] = 46;
-        dfa_state[45][10] = 70; dfa_state[45][11] = 70; dfa_state[45][12] = 70; dfa_state[45][13] = 70; dfa_state[45][14] = 70;
+        dfa_state[45][10] = 46; dfa_state[45][11] = 46; dfa_state[45][12] = 70; dfa_state[45][13] = 70; dfa_state[45][14] = 70;
         dfa_state[45][15] = 70; dfa_state[45][16] = 70; dfa_state[45][17] = 70; dfa_state[45][18] = 70; dfa_state[45][19] = 70;
         dfa_state[45][20] = 70; dfa_state[45][21] = 70; dfa_state[45][22] = 46; dfa_state[45][23] = 46; dfa_state[45][24] = 46;
 
@@ -406,7 +421,7 @@ public class Main {
 
         //state47
         dfa_state[47][0] = 48; dfa_state[47][1] = 48; dfa_state[47][2] = 48; dfa_state[47][3] = 70; dfa_state[47][4] = 70;
-        dfa_state[47][5] = 70; dfa_state[47][6] = 70; dfa_state[47][7] = 70; dfa_state[47][8] = 70; dfa_state[47][9] = 70;
+        dfa_state[47][5] = 70; dfa_state[47][6] = 70; dfa_state[47][7] = 70; dfa_state[47][8] = 70; dfa_state[47][9] = 48;
         dfa_state[47][10] = 48; dfa_state[47][11] = 48; dfa_state[47][12] = 70; dfa_state[47][13] = 70; dfa_state[47][14] = 70;
         dfa_state[47][15] = 70; dfa_state[47][16] = 70; dfa_state[47][17] = 70; dfa_state[47][18] = 70; dfa_state[47][19] = 70;
         dfa_state[47][20] = 70; dfa_state[47][21] = 70; dfa_state[47][22] = 48; dfa_state[47][23] = 48; dfa_state[47][24] = 48;
@@ -420,7 +435,7 @@ public class Main {
 
         //state49
         dfa_state[49][0] = 50; dfa_state[49][1] = 50; dfa_state[49][2] = 50; dfa_state[49][3] = 70; dfa_state[49][4] = 70;
-        dfa_state[49][5] = 70; dfa_state[49][6] = 70; dfa_state[49][7] = 70; dfa_state[49][8] = 70; dfa_state[49][9] = 70;
+        dfa_state[49][5] = 70; dfa_state[49][6] = 70; dfa_state[49][7] = 70; dfa_state[49][8] = 50; dfa_state[49][9] = 70;
         dfa_state[49][10] = 50; dfa_state[49][11] = 50; dfa_state[49][12] = 70; dfa_state[49][13] = 70; dfa_state[49][14] = 70;
         dfa_state[49][15] = 70; dfa_state[49][16] = 70; dfa_state[49][17] = 70; dfa_state[49][18] = 70; dfa_state[49][19] = 70;
         dfa_state[49][20] = 70; dfa_state[49][21] = 70; dfa_state[49][22] = 50; dfa_state[49][23] = 50; dfa_state[49][24] = 50;
