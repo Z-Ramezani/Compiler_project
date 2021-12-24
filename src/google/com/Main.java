@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
+
 public class Main {
 
     static HashSet<Character> operator = new HashSet<Character>();
@@ -27,6 +28,7 @@ public class Main {
         return chooser.getSelectedFile();
 
     } */
+  //debugging 3 :)
     static void setLetter(HashSet<Character> letter) {
         letter.add('a');letter.add('b');letter.add('c');letter.add('d');letter.add('e');
         letter.add('f');letter.add('g');letter.add('h');letter.add('i');letter.add('j');
