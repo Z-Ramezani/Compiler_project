@@ -1,7 +1,7 @@
 package google.com;
 
-import javax.swing.*;
-import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class Main {
@@ -11,9 +11,12 @@ public class Main {
     static HashSet<Character> letter = new HashSet<Character>();
     static HashSet<Character> digit = new HashSet<Character>();
     static HashSet<Integer> final_state = new HashSet<Integer>();
-    static int[][] dfa_state = new int[70][25];
+    ArrayList <String>value=new ArrayList<String >();
+    static HashMap<String,ArrayList> symbol_table=new HashMap<String ,ArrayList>();
 
-    private static File getDataFolderFromSystem() {
+    static int[][] dfa_state = new int[71][25];
+
+  /* private static File getDataFolderFromSystem() {
         JFileChooser chooser = new JFileChooser();
         chooser.setDragEnabled(true);
         chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
@@ -23,8 +26,7 @@ public class Main {
         }
         return chooser.getSelectedFile();
 
-    }
-
+    } */
     static void setLetter(HashSet<Character> letter) {
         letter.add('a');letter.add('b');letter.add('c');letter.add('d');letter.add('e');
         letter.add('f');letter.add('g');letter.add('h');letter.add('i');letter.add('j');
@@ -40,12 +42,10 @@ public class Main {
         letter.add('U');letter.add('V');letter.add('W');letter.add('X');letter.add('Y');
         letter.add('Z');
     }
-
     static void setDigit(HashSet<Character> digit) {
         digit.add('0');  digit.add('1'); digit.add('2'); digit.add('3'); digit.add('4');
         digit.add('5');  digit.add('6'); digit.add('7'); digit.add('8'); digit.add('9');
     }
-
     static void setOperator(HashSet<Character> operator){
         operator.add('('); operator.add(')'); operator.add('{'); operator.add('}');
         operator.add('<'); operator.add('>'); operator.add('['); operator.add(']');
@@ -63,7 +63,6 @@ public class Main {
         key.add("union");  key.add("unsigned"); key.add("extern");   key.add("enum");
         key.add("goto");   key.add("auto");     key.add("void");     key.add("main");
     }
-
     static void setFinal_token() {
         final_state.add(4); final_state.add(7); final_state.add(9); final_state.add(13);
         final_state.add(17); final_state.add(20); final_state.add(23); final_state.add(28);
@@ -73,7 +72,6 @@ public class Main {
         final_state.add(56); final_state.add(59); final_state.add(62); final_state.add(65);
         final_state.add(69); final_state.add(70);
     }
-
     static void setDfa_state() { // F = -1 , N = -2
         //state0
         dfa_state[0][0] = 8; dfa_state[0][1] = 1; dfa_state[0][2] = 5; dfa_state[0][3] = 10; dfa_state[0][4] = 14;
@@ -573,14 +571,20 @@ public class Main {
         dfa_state[70][20] = 70; dfa_state[70][21] = 70; dfa_state[70][22] = 70; dfa_state[70][23] = 70; dfa_state[70][24] = 70;
 
     }
+    static void setValue(){                    ///int a=2
 
+    }
     public static void main(String[] args) {
-        File a = getDataFolderFromSystem();
-        Extractor EX = new Extractor();
+       ///File a = getDataFolderFromSystem();
         setLetter(letter);
         setDigit(digit);
         setKey(keyword);
         setOperator(operator);
-        }
+        setDfa_state();
+        setFinal_token();
+        Extractor EX = new Extractor();
+
+
+    }
 
     }
