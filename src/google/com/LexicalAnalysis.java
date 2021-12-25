@@ -22,7 +22,9 @@ public class LexicalAnalysis extends Main{
              else while (true ) {
                  if (dfa_state[int_state][int_c]==70 || dfa_state[int_state][int_c]==-1  )break;
                  int_state = dfa_state[int_state][int_c];
-                 if (dfa_state[int_state][int_c]==70 || dfa_state[int_state][int_c]==-1  )break;
+                 if (dfa_state[int_state][int_c]==70 || dfa_state[int_state][int_c]==-1  ){
+                     break;
+                 }
                  token += s.charAt(i);
                  i++;
                  if (i==s.length()){
@@ -34,7 +36,7 @@ public class LexicalAnalysis extends Main{
 
 
              if (dfa_state[int_state][int_c] == -1) {
-                 if (!token.equals(" ")) {
+                 if (!token.equals(" ") && token.charAt(0) != ' ' ) {
                      token_error.add(token);
                      if (!keyword.contains(token) && !operator.contains(token) && !digit.contains(token)) {
                          String type ="";
@@ -50,7 +52,12 @@ public class LexicalAnalysis extends Main{
                      }
                  }
              }
-           else token_error.add("error");
+           else {
+               int_c = 0 ;
+               int_state = dfa_state[int_state][int_c];
+               if (dfa_state[int_state][int_c] == -1) token_error.add(token);
+               else token_error.add("error");
+             }
          }
          return token_error;
      }

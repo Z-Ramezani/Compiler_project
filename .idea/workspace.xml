@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6c2fcd4-5519-453d-8c7a-ae0bdb984d89" name="Default Changelist" comment="Add comments&#10;Call method setKeyword of SymbolTable class in main.&#10;Change Extractor constructor to method extract.&#10;Define symbolTable static object in Main.">
+    <list default="true" id="e0801b0a-abc2-4205-8df2-1e0c112a71fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/google/com/Extractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/Extractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/google/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/google/com/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/SymbolTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/google/com/lexicalAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/LexicalAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler/google/com/Extractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler/google/com/Extractor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/google/com/LexicalAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/LexicalAnalysis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -59,8 +58,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="google.com.Main" />
+      <module name="Compiler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="google.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -70,7 +83,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f6c2fcd4-5519-453d-8c7a-ae0bdb984d89" name="Default Changelist" comment="" />
+      <changelist id="e0801b0a-abc2-4205-8df2-1e0c112a71fb" name="Default Changelist" comment="" />
       <created>1636462009606</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -97,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640410220988</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Debugging4">
+      <created>1640429514004</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640429514004</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,7 +125,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -115,17 +137,61 @@
     <MESSAGE value="Zahra" />
     <MESSAGE value="debugging3" />
     <MESSAGE value="Add comments&#10;Call method setKeyword of SymbolTable class in main.&#10;Change Extractor constructor to method extract.&#10;Define symbolTable static object in Main." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comments&#10;Call method setKeyword of SymbolTable class in main.&#10;Change Extractor constructor to method extract.&#10;Define symbolTable static object in Main." />
+    <MESSAGE value="Debugging4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debugging4" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/google/com/LexicalAnalysis.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1640433360406">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1640433360406" />
+    <state x="498" y="195" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1640433352564">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="195" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1640433352564" />
+    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1640434026791">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1640434026791" />
+    <state width="1493" height="272" key="GridCell.Tab.0.bottom" timestamp="1640438512580">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="272" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1640438512580" />
+    <state width="1493" height="272" key="GridCell.Tab.0.center" timestamp="1640438512580">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="272" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1640438512580" />
+    <state width="1493" height="272" key="GridCell.Tab.0.left" timestamp="1640438512580">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="272" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1640438512580" />
+    <state width="1493" height="272" key="GridCell.Tab.0.right" timestamp="1640438512580">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="272" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1640438512580" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1640435532842">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1640435532842" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1640435532842">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1640435532842" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1640435532842">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1640435532842" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1640435532842">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1640435532842" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1640434151566">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1640434151566" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1640437150019">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1640437150019" />
   </component>
 </project>
