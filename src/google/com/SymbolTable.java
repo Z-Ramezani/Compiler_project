@@ -18,6 +18,7 @@ public class SymbolTable {
             ArrayList<String> key = new ArrayList<String>();
             key.add("keyword");
             key.add(i.next());
+            key.add("");
             symbol_table.put(j, key);
             j++;
         }
@@ -48,6 +49,7 @@ public class SymbolTable {
                 result = true;
                 break;
             }
+            i++;
         }
         return result;
     }

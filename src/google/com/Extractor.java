@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class Extractor {
      //extract is used to read the file line by line and give each line to lexicalAnalysis.
@@ -17,8 +16,8 @@ public class Extractor {
             while (reader.ready()) {
 
                 String line = reader.readLine();
-                lexicalAnalysis v=new lexicalAnalysis();
-                ArrayList result= v.lexicalAnalysis(line, count);
+                LexicalAnalysis v=new LexicalAnalysis();
+                ArrayList<String> result= v.lexicalAnalysis(line , count);
                 for (int i=0;i<result.size();i++){
                     System.out.println(result.get(i));
                 }

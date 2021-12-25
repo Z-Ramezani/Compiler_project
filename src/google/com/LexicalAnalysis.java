@@ -2,9 +2,8 @@ package google.com;
 
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 
-public class lexicalAnalysis extends Main{
+public class LexicalAnalysis extends Main{
     ArrayList<String> token_error = new ArrayList<String>();
 
     //here we used the algorithm that we send the picture of it on GitHub and DFA table.
@@ -36,10 +35,9 @@ public class lexicalAnalysis extends Main{
 
              if (dfa_state[int_state][int_c] == -1) {
                  if (!token.equals(" ")) {
-                     if (!keyword.contains(token)) {
-                         String type = null;
-                         //????????
-                         token_error.add(token);
+                     token_error.add(token);
+                     if (!keyword.contains(token) && !operator.contains(token) && !digit.contains(token)) {
+                         String type ="";
                          // define the type of token to complete symbol table.
                          for (int ind = token_error.indexOf(token) - 1; ind >= 0; ind--) {
                              if (keyword_type.contains(token_error.get(ind))) {

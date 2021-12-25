@@ -445,10 +445,10 @@ public class Main {
         dfa_state[50][20] = -1; dfa_state[50][21] = -1; dfa_state[50][22] = -1; dfa_state[50][23] = -1; dfa_state[50][24] = -1;
 
         //state51
-        dfa_state[51][0] = 51; dfa_state[51][1] = 51; dfa_state[51][2] = 51; dfa_state[51][3] = 70; dfa_state[51][4] = 70;
-        dfa_state[51][5] = 70; dfa_state[51][6] = 70; dfa_state[51][7] = 70; dfa_state[51][8] = 70; dfa_state[51][9] = 51;
-        dfa_state[51][10] = 51; dfa_state[51][11] = 70; dfa_state[51][12] = 70; dfa_state[51][13] = 70; dfa_state[51][14] = 70;
-        dfa_state[51][15] = 50; dfa_state[51][16] = 70; dfa_state[51][17] = 70; dfa_state[51][18] = 70; dfa_state[51][19] = 70;
+        dfa_state[51][0] = 52; dfa_state[51][1] = 52; dfa_state[51][2] = 52; dfa_state[51][3] = 70; dfa_state[51][4] = 70;
+        dfa_state[51][5] = 70; dfa_state[51][6] = 70; dfa_state[51][7] = 70; dfa_state[51][8] = 70; dfa_state[51][9] = 52;
+        dfa_state[51][10] = 52; dfa_state[51][11] = 70; dfa_state[51][12] = 70; dfa_state[51][13] = 70; dfa_state[51][14] = 70;
+        dfa_state[51][15] = 51; dfa_state[51][16] = 70; dfa_state[51][17] = 70; dfa_state[51][18] = 70; dfa_state[51][19] = 70;
         dfa_state[51][20] = 70; dfa_state[51][21] = 70; dfa_state[51][22] = 52; dfa_state[51][23] = 52; dfa_state[51][24] = 52;
 
        //state52
