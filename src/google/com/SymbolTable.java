@@ -30,7 +30,7 @@ public class SymbolTable {
     // This method is used to set tokens that are id in symbol table.It needs token_name,type and name.
     public void setSymbol_table(int row, String token_name, String type, String name) {
         if (!check(name)) {
-            ArrayList<String> id = new ArrayList<String>();
+            ArrayList<String> id = new ArrayList<>();
             id.add(token_name);
             id.add(type);
             id.add(name);
