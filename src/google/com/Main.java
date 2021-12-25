@@ -16,7 +16,7 @@ public class Main {
     static HashSet<Integer> final_state = new HashSet<Integer>();
     static int[][] dfa_state = new int[71][25];
     static SymbolTable symbolTable = new SymbolTable();
-  private static File getDataFolderFromSystem() {
+    private static File getDataFolderFromSystem() {
         JFileChooser chooser = new JFileChooser();
         chooser.setDragEnabled(true);
         chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
@@ -28,21 +28,21 @@ public class Main {
 
     }
 
-  static void setLetter(HashSet<String> letter) {
-      letter.add("a");letter.add("b");letter.add("c");letter.add("d");letter.add("e");
-      letter.add("f");letter.add("g");letter.add("h");letter.add("i");letter.add("j");
-      letter.add("k");letter.add("l");letter.add("m");letter.add("n");letter.add("o");
-      letter.add("p");letter.add("q");letter.add("r");letter.add("s");letter.add("t");
-      letter.add("u");letter.add("v");letter.add("w");letter.add("x");letter.add("y");
-      letter.add("z");
+    static void setLetter(HashSet<String> letter) {
+        letter.add("a");letter.add("b");letter.add("c");letter.add("d");letter.add("e");
+        letter.add("f");letter.add("g");letter.add("h");letter.add("i");letter.add("j");
+        letter.add("k");letter.add("l");letter.add("m");letter.add("n");letter.add("o");
+        letter.add("p");letter.add("q");letter.add("r");letter.add("s");letter.add("t");
+        letter.add("u");letter.add("v");letter.add("w");letter.add("x");letter.add("y");
+        letter.add("z");
 
-      letter.add("A");letter.add("B");letter.add("C");letter.add("D");letter.add("E");
-      letter.add("F");letter.add("G");letter.add("H");letter.add("I");letter.add("J");
-      letter.add("K");letter.add("L");letter.add("M");letter.add("N");letter.add("O");
-      letter.add("P");letter.add("Q");letter.add("R");letter.add("S");letter.add("T");
-      letter.add("U");letter.add("V");letter.add("W");letter.add("X");letter.add("Y");
-      letter.add("Z");
-  }
+        letter.add("A");letter.add("B");letter.add("C");letter.add("D");letter.add("E");
+        letter.add("F");letter.add("G");letter.add("H");letter.add("I");letter.add("J");
+        letter.add("K");letter.add("L");letter.add("M");letter.add("N");letter.add("O");
+        letter.add("P");letter.add("Q");letter.add("R");letter.add("S");letter.add("T");
+        letter.add("U");letter.add("V");letter.add("W");letter.add("X");letter.add("Y");
+        letter.add("Z");
+    }
     static void setDigit(HashSet<String> digit) {
         digit.add("0");  digit.add("1"); digit.add("2"); digit.add("3"); digit.add("4");
         digit.add("5");  digit.add("6"); digit.add("7"); digit.add("8"); digit.add("9");
@@ -452,14 +452,14 @@ public class Main {
         dfa_state[51][15] = 51; dfa_state[51][16] = 70; dfa_state[51][17] = 70; dfa_state[51][18] = 70; dfa_state[51][19] = 70;
         dfa_state[51][20] = 70; dfa_state[51][21] = 70; dfa_state[51][22] = 52; dfa_state[51][23] = 52; dfa_state[51][24] = 52;
 
-       //state52
+        //state52
         dfa_state[52][0] = -1; dfa_state[52][1] = -1; dfa_state[52][2] = -1; dfa_state[52][3] = -1; dfa_state[52][4] = -1;
         dfa_state[52][5] = -1; dfa_state[52][6] = -1; dfa_state[52][7] = -1; dfa_state[52][8] = -1; dfa_state[52][9] = -1;
         dfa_state[52][10] = -1; dfa_state[52][11] = -1; dfa_state[52][12] = -1; dfa_state[52][13] = -1; dfa_state[52][14] = -1;
         dfa_state[52][15] = -1; dfa_state[52][16] = -1; dfa_state[52][17] = -1; dfa_state[52][18] = -1; dfa_state[52][19] = -1;
         dfa_state[52][20] = -1; dfa_state[52][21] = -1; dfa_state[52][22] = -1; dfa_state[52][23] = -1; dfa_state[52][24] = -1;
 
-      //state53
+        //state53
         dfa_state[53][0] = 54; dfa_state[53][1] = 54; dfa_state[53][2] = 54; dfa_state[53][3] = 70; dfa_state[53][4] = 70;
         dfa_state[53][5] = 70; dfa_state[53][6] = 70; dfa_state[53][7] = 70; dfa_state[53][8] = 70; dfa_state[53][9] = 70;
         dfa_state[53][10] = 70; dfa_state[53][11] = 54; dfa_state[53][12] = 70; dfa_state[53][13] = 70; dfa_state[53][14] = 70;
@@ -588,7 +588,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-       File a = getDataFolderFromSystem();
+        File a = getDataFolderFromSystem();
         //setting information we need to run this program like list of letters, digits, keywords, operators, DFA table and symbol table.
         setLetter(letter);
         setDigit(digit);
@@ -604,4 +604,4 @@ public class Main {
 
     }
 
-    }
+}
