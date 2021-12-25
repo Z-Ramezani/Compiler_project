@@ -21,11 +21,8 @@ public class LexicalAnalysis extends Main{
                 i++;
             }
             else while (true ) {
-                if (dfa_state[int_state][int_c]==70 || dfa_state[int_state][int_c]==-1  )break;
+                if (dfa_state[int_state][int_c]==70 || dfa_state[int_state][int_c]==-1 ||   final_state.contains(dfa_state[int_state][int_c]))break;
                 int_state = dfa_state[int_state][int_c];
-                if (dfa_state[int_state][int_c]==70 || dfa_state[int_state][int_c]==-1  ){
-                    break;
-                }
                 token += s.charAt(i);
                 i++;
                 if (i==s.length()){
@@ -36,7 +33,7 @@ public class LexicalAnalysis extends Main{
             }
 
 
-            if (dfa_state[int_state][int_c] == -1) {
+            if (dfa_state[int_state][int_c] == -1 ||   final_state.contains(dfa_state[int_state][int_c]) ){
                 if (!token.equals(" ") && token.charAt(0) != ' ' ) {
                     token_error.add(token);
                     if (!keyword.contains(token) && !operator.contains(token) && !digit.contains(token)) {
