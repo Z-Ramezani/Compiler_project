@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c14557b-9917-4c40-b84d-405821c25f61" name="Default" comment="t4" />
+    <list default="true" id="5c14557b-9917-4c40-b84d-405821c25f61" name="Default" comment="change Lexical">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640457789112</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change Lexical">
+      <created>1640457917406</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640457917406</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -219,13 +228,11 @@
       </map>
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="t3" />
     <MESSAGE value="t4" />
-    <option name="LAST_COMMIT_MESSAGE" value="t4" />
+    <MESSAGE value="change Lexical" />
+    <option name="LAST_COMMIT_MESSAGE" value="change Lexical" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/google/com/SymbolTable.java">

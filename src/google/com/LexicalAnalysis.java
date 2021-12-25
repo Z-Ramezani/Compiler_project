@@ -5,7 +5,7 @@ package google.com;
 import java.util.ArrayList;
 
 public class LexicalAnalysis extends Main{
-    ArrayList<String> token_error = new ArrayList<String>();
+    ArrayList<String> token_error = new ArrayList<>();
 
     //here we used the algorithm that we send the picture of it on GitHub and DFA table.
     // also, here we complete symbol table for tokens that are identifier.

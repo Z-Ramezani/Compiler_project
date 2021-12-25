@@ -7,13 +7,13 @@ import java.util.HashSet;
 
 public class Main {
 
-    static HashSet<String> operator = new HashSet<String>();
-    static HashSet<String> letter = new HashSet<String>();
-    static HashSet<String> digit = new HashSet<String>();
-    public static HashSet<String> keyword = new HashSet<String>();
-    public static HashSet<String> keyword_type = new HashSet<String>();
-    public static HashSet<String> keyword_no_type = new HashSet<String>();
-    static HashSet<Integer> final_state = new HashSet<Integer>();
+    static HashSet<String> operator = new HashSet<>();
+    static HashSet<String> letter = new HashSet<>();
+    static HashSet<String> digit = new HashSet<>();
+    public static HashSet<String> keyword = new HashSet<>();
+    public static HashSet<String> keyword_type = new HashSet<>();
+    public static HashSet<String> keyword_no_type = new HashSet<>();
+    static HashSet<Integer> final_state = new HashSet<>();
     static int[][] dfa_state = new int[71][25];
     static SymbolTable symbolTable = new SymbolTable();
     private static File getDataFolderFromSystem() {

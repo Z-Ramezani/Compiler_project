@@ -9,14 +9,14 @@ import java.util.Iterator;
 
 public class SymbolTable {
 
-    HashMap<Integer , ArrayList<String>> symbol_table = new HashMap<Integer, ArrayList<String>>();
+    HashMap<Integer , ArrayList<String>> symbol_table = new HashMap<>();
 
     // setting keywords to symbol table. This method is called in class Main method main to set keywords in symbol table.
     public void setKeyword(HashSet<String> keyword){
         Iterator<String> i = keyword.iterator();
         int j = 0;
         while(i.hasNext()){
-            ArrayList<String> key = new ArrayList<String>();
+            ArrayList<String> key = new ArrayList<>();
             key.add("keyword");
             key.add(i.next());
             key.add("");
@@ -25,9 +25,7 @@ public class SymbolTable {
         }
     }
 
-    public HashMap<Integer, ArrayList<String>> getSymbol_table() {
-        return symbol_table;
-    }
+    public HashMap<Integer, ArrayList<String>> getSymbol_table() { return symbol_table; }
 
     // This method is used to set tokens that are id in symbol table.It needs token_name,type and name.
     public void setSymbol_table(int row, String token_name, String type, String name) {

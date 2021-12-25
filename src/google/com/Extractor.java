@@ -18,9 +18,7 @@ public class Extractor {
                 String line = reader.readLine();
                 LexicalAnalysis v=new LexicalAnalysis();
                 ArrayList<String> result= v.lexicalAnalysis(line);
-                for (int i=0;i<result.size();i++){
-                    System.out.println(result.get(i));
-                }
+                for (String s : result) { System.out.println(s); }
             }
             reader.close();
         } catch(IOException e) { System.out.print("Error"); }
