@@ -46,7 +46,6 @@ public class LexicalAnalysis extends Main{
                             }
                         }
                         symbolTable.setSymbol_table(Extractor.count, "identifier", type, token);
-                        Extractor.count ++ ;
                     }
                 }
             }

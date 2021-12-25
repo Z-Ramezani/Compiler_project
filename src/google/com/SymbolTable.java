@@ -34,6 +34,7 @@ public class SymbolTable {
             id.add(token_name);
             id.add(type);
             id.add(name);
+            Extractor.count ++ ;
             symbol_table.put(row, id);
         }
 
