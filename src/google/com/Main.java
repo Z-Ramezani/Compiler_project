@@ -2,8 +2,6 @@ package google.com;
 
 import javax.swing.*;
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 
 
@@ -29,7 +27,7 @@ public class Main {
         return chooser.getSelectedFile();
 
     }
-  //debugging 3 :)
+
   static void setLetter(HashSet<String> letter) {
       letter.add("a");letter.add("b");letter.add("c");letter.add("d");letter.add("e");
       letter.add("f");letter.add("g");letter.add("h");letter.add("i");letter.add("j");
@@ -55,6 +53,7 @@ public class Main {
         operator.add("+"); operator.add("_"); operator.add("*"); operator.add("/");
         operator.add("%"); operator.add("="); operator.add("!"); operator.add("?");
         operator.add("&"); operator.add("|"); operator.add(":"); operator.add(",");
+        operator.add(";");
     }
     static void setKey(HashSet<String> key){
         key.add("if");     key.add("else");     key.add("while");    key.add("switch");
@@ -597,6 +596,8 @@ public class Main {
         setOperator(operator);
         setDfa_state();
         setFinal_token();
+        setKeyword_type(keyword_type);
+        setKeyword_no_type(keyword_no_type);
         symbolTable.setKeyword(keyword);
         Extractor.extract(a);
 

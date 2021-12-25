@@ -12,7 +12,7 @@ public class LexicalAnalysis extends Main{
          int i = 0;
          while (i < s.length()) {
              String  token = "";
-             char c = s.charAt(i);
+             String c = String.valueOf(s.charAt(i));
              int int_state = 0, int_c = defineChar(c);
 
              if (int_c == -1) {
@@ -31,7 +31,7 @@ public class LexicalAnalysis extends Main{
                      int_state = dfa_state[int_state][int_c];
                      break;
                  }
-                 int_c = defineChar(s.charAt(i));
+                 int_c = defineChar(String.valueOf(s.charAt(i)));
              }
 
 
@@ -63,17 +63,17 @@ public class LexicalAnalysis extends Main{
      }
 
      //here we understand that the input is which column of DFA table.
-     int defineChar(char c) {
+     int defineChar(String c) {
          int int_c = -1;
          if (letter.contains(c))
              int_c=2;
          else if (digit.contains(c))
              int_c=1;
-         else if (c == ' ') int_c=0;
+         else if (c.equals(" ")) int_c=0;
          else {
              String characters = "+-=!/)(}{><.;,&|%*_'“\n";
              for (int i = 3; i < 23; i++) {
-                 if (c == characters.charAt(i - 3)) {
+                 if (c.equals(String.valueOf(characters.charAt(i - 3)))) {
                      int_c = i;
                      break;
                  }
