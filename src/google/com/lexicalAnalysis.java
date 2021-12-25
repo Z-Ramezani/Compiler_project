@@ -6,11 +6,11 @@ import java.util.LinkedList;
 
 public class lexicalAnalysis extends Main{
     ArrayList<String> token_error = new ArrayList<String>();
-    SymbolTable symbolTable = new SymbolTable();
 
+    //here we used the algorithm that we send the picture of it on GitHub and DFA table.
+    // also, here we complete symbol table for tokens that are identifier.
     public ArrayList<String> lexicalAnalysis(String s, int count) {
          int i = 0;
-
          while (i < s.length()) {
              String  token = "";
              char c = s.charAt(i);
@@ -38,7 +38,9 @@ public class lexicalAnalysis extends Main{
                  if (!token.equals(" ")) {
                      if (!keyword.contains(token)) {
                          String type = null;
+                         //????????
                          token_error.add(token);
+                         // define the type of token to complete symbol table.
                          for (int ind = token_error.indexOf(token) - 1; ind >= 0; ind--) {
                              if (keyword_type.contains(token_error.get(ind))) {
                                  type = token_error.get(ind);
@@ -55,6 +57,7 @@ public class lexicalAnalysis extends Main{
          return token_error;
      }
 
+     //here we understand that the input is which column of DFA table.
      int defineChar(char c) {
          int int_c = -1;
          if (letter.contains(c))

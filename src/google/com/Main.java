@@ -14,11 +14,8 @@ public class Main {
     static HashSet<Character> letter = new HashSet<Character>();
     static HashSet<Character> digit = new HashSet<Character>();
     static HashSet<Integer> final_state = new HashSet<Integer>();
-    ArrayList <String>value=new ArrayList<String >();
-    static HashMap<String,ArrayList> symbol_table=new HashMap<String ,ArrayList>();
-
     static int[][] dfa_state = new int[71][25];
-
+    static SymbolTable symbolTable = new SymbolTable();
   /* private static File getDataFolderFromSystem() {
         JFileChooser chooser = new JFileChooser();
         chooser.setDragEnabled(true);
@@ -588,18 +585,18 @@ public class Main {
         dfa_state[70][20] = 70; dfa_state[70][21] = 70; dfa_state[70][22] = 70; dfa_state[70][23] = 70; dfa_state[70][24] = 70;
 
     }
-    static void setValue(){                    ///int a=2
 
-    }
     public static void main(String[] args) {
        ///File a = getDataFolderFromSystem();
+        //setting information we need to run this program like list of letters, digits, keywords, operators, DFA table and symbol table.
         setLetter(letter);
         setDigit(digit);
         setKey(keyword);
         setOperator(operator);
         setDfa_state();
         setFinal_token();
-        Extractor EX = new Extractor();
+        symbolTable.setKeyword(keyword);
+        Extractor.extract();
 
 
     }

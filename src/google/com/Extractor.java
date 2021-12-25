@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Extractor {
-     Extractor(){
+     //extract is used to read the file line by line and give each line to lexicalAnalysis.
+    public static void extract(){
         try {
             File file = new File("D:\\New folder\\Lex.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));

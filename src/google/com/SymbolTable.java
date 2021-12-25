@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+// symbol table has created here by using hashmap which has an integer pointer as key and arrayList from tokenName , type and name as value.
 
 public class SymbolTable {
 
     HashMap<Integer , ArrayList<String>> symbol_table = new HashMap<Integer, ArrayList<String>>();
 
+    // setting keywords to symbol table. This method is called in class Main method main to set keywords in symbol table.
     public void setKeyword(HashSet<String> keyword){
         Iterator<String> i = keyword.iterator();
         int j = 0;
@@ -20,10 +22,12 @@ public class SymbolTable {
             j++;
         }
     }
+
     public HashMap<Integer, ArrayList<String>> getSymbol_table() {
         return symbol_table;
     }
 
+    // This method is used to set tokens that are id in symbol table.It needs token_name,type and name.
     public void setSymbol_table(int row, String token_name, String type, String name) {
         if (!check(name)) {
             ArrayList<String> id = new ArrayList<String>();
@@ -34,6 +38,7 @@ public class SymbolTable {
         }
 
     }
+    //here we check if the id that we found has been set to symbol table before or not.we call this method in setSymbol_table method.
     public boolean check (String name){
         boolean result = false;
         int i = 0;
