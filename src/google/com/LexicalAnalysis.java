@@ -8,7 +8,7 @@ public class LexicalAnalysis extends Main{
 
     //here we used the algorithm that we send the picture of it on GitHub and DFA table.
     // also, here we complete symbol table for tokens that are identifier.
-    public ArrayList<String> lexicalAnalysis(String s, int count) {
+    public ArrayList<String> lexicalAnalysis(String s) {
          int i = 0;
          while (i < s.length()) {
              String  token = "";
@@ -47,8 +47,8 @@ public class LexicalAnalysis extends Main{
                                  break;
                              }
                          }
-
-                         symbolTable.setSymbol_table(count, "identifier", type, token);
+                         symbolTable.setSymbol_table(Extractor.count, "identifier", type, token);
+                         Extractor.count ++ ;
                      }
                  }
              }

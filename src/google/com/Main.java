@@ -1,5 +1,7 @@
 package google.com;
 
+import javax.swing.*;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -7,16 +9,16 @@ import java.util.HashSet;
 
 public class Main {
 
-    static HashSet<Character> operator = new HashSet<Character>();
+    static HashSet<String> operator = new HashSet<String>();
+    static HashSet<String> letter = new HashSet<String>();
+    static HashSet<String> digit = new HashSet<String>();
     public static HashSet<String> keyword = new HashSet<String>();
     public static HashSet<String> keyword_type = new HashSet<String>();
     public static HashSet<String> keyword_no_type = new HashSet<String>();
-    static HashSet<Character> letter = new HashSet<Character>();
-    static HashSet<Character> digit = new HashSet<Character>();
     static HashSet<Integer> final_state = new HashSet<Integer>();
     static int[][] dfa_state = new int[71][25];
     static SymbolTable symbolTable = new SymbolTable();
-  /* private static File getDataFolderFromSystem() {
+  private static File getDataFolderFromSystem() {
         JFileChooser chooser = new JFileChooser();
         chooser.setDragEnabled(true);
         chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
@@ -26,33 +28,33 @@ public class Main {
         }
         return chooser.getSelectedFile();
 
-    } */
+    }
   //debugging 3 :)
-    static void setLetter(HashSet<Character> letter) {
-        letter.add('a');letter.add('b');letter.add('c');letter.add('d');letter.add('e');
-        letter.add('f');letter.add('g');letter.add('h');letter.add('i');letter.add('j');
-        letter.add('k');letter.add('l');letter.add('m');letter.add('n');letter.add('o');
-        letter.add('p');letter.add('q');letter.add('r');letter.add('s');letter.add('t');
-        letter.add('u');letter.add('v');letter.add('w');letter.add('x');letter.add('y');
-        letter.add('z');
+  static void setLetter(HashSet<String> letter) {
+      letter.add("a");letter.add("b");letter.add("c");letter.add("d");letter.add("e");
+      letter.add("f");letter.add("g");letter.add("h");letter.add("i");letter.add("j");
+      letter.add("k");letter.add("l");letter.add("m");letter.add("n");letter.add("o");
+      letter.add("p");letter.add("q");letter.add("r");letter.add("s");letter.add("t");
+      letter.add("u");letter.add("v");letter.add("w");letter.add("x");letter.add("y");
+      letter.add("z");
 
-        letter.add('A');letter.add('B');letter.add('C');letter.add('D');letter.add('E');
-        letter.add('F');letter.add('G');letter.add('H');letter.add('I');letter.add('J');
-        letter.add('K');letter.add('L');letter.add('M');letter.add('N');letter.add('O');
-        letter.add('P');letter.add('Q');letter.add('R');letter.add('S');letter.add('T');
-        letter.add('U');letter.add('V');letter.add('W');letter.add('X');letter.add('Y');
-        letter.add('Z');
+      letter.add("A");letter.add("B");letter.add("C");letter.add("D");letter.add("E");
+      letter.add("F");letter.add("G");letter.add("H");letter.add("I");letter.add("J");
+      letter.add("K");letter.add("L");letter.add("M");letter.add("N");letter.add("O");
+      letter.add("P");letter.add("Q");letter.add("R");letter.add("S");letter.add("T");
+      letter.add("U");letter.add("V");letter.add("W");letter.add("X");letter.add("Y");
+      letter.add("Z");
+  }
+    static void setDigit(HashSet<String> digit) {
+        digit.add("0");  digit.add("1"); digit.add("2"); digit.add("3"); digit.add("4");
+        digit.add("5");  digit.add("6"); digit.add("7"); digit.add("8"); digit.add("9");
     }
-    static void setDigit(HashSet<Character> digit) {
-        digit.add('0');  digit.add('1'); digit.add('2'); digit.add('3'); digit.add('4');
-        digit.add('5');  digit.add('6'); digit.add('7'); digit.add('8'); digit.add('9');
-    }
-    static void setOperator(HashSet<Character> operator){
-        operator.add('('); operator.add(')'); operator.add('{'); operator.add('}');
-        operator.add('<'); operator.add('>'); operator.add('['); operator.add(']');
-        operator.add('+'); operator.add('_'); operator.add('*'); operator.add('/');
-        operator.add('%'); operator.add('='); operator.add('!'); operator.add('?');
-        operator.add('&'); operator.add('|'); operator.add(':'); operator.add(',');
+    static void setOperator(HashSet<String> operator){
+        operator.add("("); operator.add(")"); operator.add("{"); operator.add("}");
+        operator.add("<"); operator.add(">"); operator.add("["); operator.add("]");
+        operator.add("+"); operator.add("_"); operator.add("*"); operator.add("/");
+        operator.add("%"); operator.add("="); operator.add("!"); operator.add("?");
+        operator.add("&"); operator.add("|"); operator.add(":"); operator.add(",");
     }
     static void setKey(HashSet<String> key){
         key.add("if");     key.add("else");     key.add("while");    key.add("switch");
@@ -587,7 +589,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-       ///File a = getDataFolderFromSystem();
+       File a = getDataFolderFromSystem();
         //setting information we need to run this program like list of letters, digits, keywords, operators, DFA table and symbol table.
         setLetter(letter);
         setDigit(digit);
@@ -596,7 +598,7 @@ public class Main {
         setDfa_state();
         setFinal_token();
         symbolTable.setKeyword(keyword);
-        Extractor.extract();
+        Extractor.extract(a);
 
 
     }
