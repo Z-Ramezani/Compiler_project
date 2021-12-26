@@ -8,8 +8,9 @@ This project consist of 3 phases:
 * Semantic analyser
 
 ## Lexical analyser
-Categorizes the contents of the input file as tokens. It is also the job of lexical analyzer to get rid of code comments. The output of the lexical analyzer for our program would look like this:
-input
+Categorizes the contents of the input file as tokens. It is also the job of lexical analyzer to get rid of code comments. The output of the lexical analyzer for our program for sample input would look like this:
+
+Sample input
 ```
 int main(){
 int a=3;
@@ -44,8 +45,9 @@ Steps:
 - [x] Creat C Compiler DFA
 - [x] Creat C Compiler Table of DFA
 - [x] Write java program of Lexical Analyser by using DFA
-- [x] Creat Symbol Table 
-
-
+- [x] Add keywords and identifiers to Symbol Table 
+## How to run this project
+Creat Lex.txt and copy Sample input or any iput you want.run the java program and just select where your Lex.txt is.
+for exmaple if your text file is in Desktop you should select Desktop and click on Open button then you can see the result.
 
 
