@@ -53,7 +53,7 @@ public class Main {
         operator.add("+"); operator.add("_"); operator.add("*"); operator.add("/");
         operator.add("%"); operator.add("="); operator.add("!"); operator.add("?");
         operator.add("&"); operator.add("|"); operator.add(":"); operator.add(",");
-        operator.add(";");
+        operator.add(";");operator.add("++");
     }
     static void setKey(HashSet<String> key){
         key.add("if");     key.add("else");     key.add("while");    key.add("switch");
