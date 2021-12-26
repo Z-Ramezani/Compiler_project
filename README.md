@@ -52,8 +52,8 @@ Create Lex.txt and copy Sample input or any iput you want.run the java program a
 for exmaple if your text file is in Desktop you should select Desktop and click on Open button then you can see the result.
 
 ## Refrences
--[How to write your own C compiler from scratch with Python!](https://medium.com/@pasi_pyrro/how-to-write-your-own-c-compiler-from-scratch-with-python-90ab84ffe071#f6ed)
+- [How to write your own C compiler from scratch with Python!](https://medium.com/@pasi_pyrro/how-to-write-your-own-c-compiler-from-scratch-with-python-90ab84ffe071#f6ed)
 
--Compilers Principles, Techniques, & Tools Seccond Edition
+- Compilers Principles, Techniques, & Tools Seccond Edition
 
 
