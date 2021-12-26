@@ -42,12 +42,17 @@ number:: 5
 For this part we used a DFA and it's table to tokenize the code. 
 ### Implementation of lexical analyser
 Steps:
-- [x] Creat C Compiler DFA
-- [x] Creat C Compiler Table of DFA
+- [x] Create C Compiler DFA
+- [x] Create C Compiler Table of DFA
 - [x] Write java program of Lexical Analyser by using DFA
 - [x] Add keywords and identifiers to Symbol Table 
+
 ## How to run this project
-Creat Lex.txt and copy Sample input or any iput you want.run the java program and just select where your Lex.txt is.
+Create Lex.txt and copy Sample input or any iput you want.run the java program and just select where your Lex.txt is.
 for exmaple if your text file is in Desktop you should select Desktop and click on Open button then you can see the result.
+
+## Refrences
+-[How to write your own C compiler from scratch with Python!](https://medium.com/@pasi_pyrro/how-to-write-your-own-c-compiler-from-scratch-with-python-90ab84ffe071#f6ed)
+-Compilers Principles, Techniques, & Tools Seccond Edition
 
 
