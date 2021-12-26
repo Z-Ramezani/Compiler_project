@@ -9,7 +9,7 @@ import java.util.Iterator;
 
 public class SymbolTable {
 
-    HashMap<Integer , ArrayList<String>> symbol_table = new HashMap<Integer , ArrayList<String>>();
+   public HashMap<Integer , ArrayList<String>> symbol_table = new HashMap<Integer , ArrayList<String>>();
 
     // setting keywords to symbol table. This method is called in class Main method main to set keywords in symbol table.
     public void setKeyword(HashSet<String> keyword){
@@ -47,6 +47,19 @@ public class SymbolTable {
             ArrayList<String> tmp = symbol_table.get(i);
             if (tmp.get(2).equals(name)){
                 result = true;
+                break;
+            }
+            i++;
+        }
+        return result;
+    }
+    public String check2 (String name){
+        String  result = null;
+        int i = 0;
+        while(i < symbol_table.size()){
+            ArrayList<String> tmp = symbol_table.get(i);
+            if (tmp.get(2).equals(name)){
+                result = tmp.get(1);
                 break;
             }
             i++;

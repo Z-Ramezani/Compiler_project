@@ -53,7 +53,10 @@ public class Main {
         operator.add("+"); operator.add("_"); operator.add("*"); operator.add("/");
         operator.add("%"); operator.add("="); operator.add("!"); operator.add("?");
         operator.add("&"); operator.add("|"); operator.add(":"); operator.add(",");
-        operator.add(";");operator.add("++");
+        operator.add(";");operator.add("++");operator.add("+=");
+        operator.add("-");operator.add("--");operator.add("-=");
+        operator.add("<=");operator.add(">=");operator.add("!=");
+
     }
     static void setKey(HashSet<String> key){
         key.add("if");     key.add("else");     key.add("while");    key.add("switch");
@@ -187,7 +190,7 @@ public class Main {
         dfa_state[13][20] = -1; dfa_state[13][21] = -1; dfa_state[13][22] = -1; dfa_state[13][23] = -1; dfa_state[13][24] = -1;
 
         //state14
-        dfa_state[14][0] = 17; dfa_state[14][1] = 17; dfa_state[14][2] = 17; dfa_state[14][3] = 15; dfa_state[14][4] = 70;
+        dfa_state[14][0] = 17; dfa_state[14][1] = 17; dfa_state[14][2] = 17; dfa_state[14][3] = 15; dfa_state[14][4] = 15;
         dfa_state[14][5] = 16; dfa_state[14][6] = 70; dfa_state[14][7] = 70; dfa_state[14][8] = 70; dfa_state[14][9] = 17;
         dfa_state[14][10] = 70; dfa_state[14][11] = 70; dfa_state[14][12] = 70; dfa_state[14][13] = 70; dfa_state[14][14] = 70;
         dfa_state[14][15] = 17; dfa_state[14][16] = 17; dfa_state[14][17] = 17; dfa_state[14][18] = 17; dfa_state[14][19] = 17;

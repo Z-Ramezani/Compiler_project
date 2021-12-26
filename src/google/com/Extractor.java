@@ -1,7 +1,9 @@
 package google.com;
 ///debug4
 
+import javax.sound.midi.Soundbank;
 import javax.swing.*;
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -32,17 +34,26 @@ public class Extractor {
     }
     public static  void prints(ArrayList<String > result){
         HashMap symbol=symbolTable.getSymbol_table();
+
         String [] columns = {"Type" ,"Token"};
         Object [][] token_type=new Object[result.size()][2];
-        int i=0;
+        int i=0 ;
+
         for (String s: result) {
             if (operator.contains(s))  token_type[i][0]="Operator";
             else if (keyword.contains(s)) token_type[i][0]="Keyword";
             else if (digit.contains(s))  token_type[i][0]="Number";
             else{
                 ///  if (symbol.containsValue(s))
+
+
+                s = symbolTable.check2(s);
+
+
                 token_type[i][0]="Identifier";
+
             }
+           // if (token_type[i][0].equals("Identifier")) token_type[i][1] = sid;
             token_type[i][1]=s;
             i++;
         }
@@ -54,5 +65,8 @@ public class Extractor {
         f.add(sp);
         f.setSize(500, 200);
         f.setVisible(true);
+        table.getTableHeader().setFont(new Font("SansSerif", Font.BOLD, 14));
+        table.setBackground(new Color(79, 255, 255));
+        table.setFont(new Font("Bahnschrift SemiLight SemiConde", Font.PLAIN, 17));
     }
 }
