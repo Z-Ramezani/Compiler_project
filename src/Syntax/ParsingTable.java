@@ -298,20 +298,198 @@ public class ParsingTable {
         Pair pair86 = new Pair("Initialization-Stmt-tmp", ";");
         table.put(pair86, "= Expression-Stmt End");
 
+        ////////
 
+        Pair pair87 = new Pair("type", "int");
+        table.put(pair87, "int");
 
+        Pair pair88 = new Pair("type", "float");
+        table.put(pair88, "float");
 
+        Pair pair89 = new Pair("type", "char");
+        table.put(pair89, "char");
 
+        ////////
 
+        Pair pair90 = new Pair("Combine-Stmt", "{");
+        table.put(pair90, "{ T");
 
+        Pair pair91 = new Pair("Combine-Stmt", "{");
+        table.put(pair91, "{ T");
 
+        ////////
 
+        Pair pair92 = new Pair("T", "int");
+        table.put(pair92, "Single-Stmt");
 
+        Pair pair93 = new Pair("T", "{");
+        table.put(pair93, "Single-Stmt");
 
+        Pair pair94 = new Pair("T", "}");
+        table.put(pair94, "} bracket-tmp");
 
+        Pair pair95 = new Pair("T", "id");
+        table.put(pair95, "Single-Stmt");
 
+        Pair pair96 = new Pair("T", "float");
+        table.put(pair96, "Single-Stmt");
 
+        Pair pair97 = new Pair("T", "char");
+        table.put(pair97, "Single-Stmt");
 
+        Pair pair98 = new Pair("T", "if");
+        table.put(pair98, "Single-Stmt");
 
+        Pair pair99 = new Pair("T", "while");
+        table.put(pair99, "Single-Stmt");
+
+        Pair pair100 = new Pair("T", "do");
+        table.put(pair100, "Single-Stmt");
+
+        Pair pair101 = new Pair("T", "for");
+        table.put(pair101, "Single-Stmt");
+
+        Pair pair102 = new Pair("T", "break");
+        table.put(pair102, "Single-Stmt");
+
+        Pair pair103 = new Pair("T", "continue");
+        table.put(pair103, "Single-Stmt");
+
+        Pair pair104 = new Pair("T", "return");
+        table.put(pair104, "Single-Stmt");
+
+        //////////
+
+        Pair pair105 = new Pair("If-Stmt", "if");
+        table.put(pair105, "if ( Cond-Stmt ) Single-Stmt");
+
+        ///////////
+
+        Pair pair106 = new Pair("Cond-Stmt", "id");
+        table.put(pair106, "Expression-Stmt Cond-Stmt-tmp");
+
+        Pair pair107 = new Pair("Cond-Stmt", "digit");
+        table.put(pair107, "Expression-Stmt Cond-Stmt-tmp");
+
+        Pair pair108 = new Pair("Cond-Stmt", ")");
+        table.put(pair108, "e");
+
+        /////////////
+
+        Pair pair109 = new Pair("Cond-Stmt-tmp", ";");
+        table.put(pair109, "e");
+
+        Pair pair110 = new Pair("Cond-Stmt-tmp", "==");
+        table.put(pair110, "Cond-Operand Expression-Stmt");
+
+        Pair pair111 = new Pair("Cond-Stmt-tmp", ">=");
+        table.put(pair111, "Cond-Operand Expression-Stmt");
+
+        Pair pair112 = new Pair("Cond-Stmt-tmp", "<=");
+        table.put(pair112, "Cond-Operand Expression-Stmt");
+
+        Pair pair113 = new Pair("Cond-Stmt-tmp", "!=");
+        table.put(pair113, "Cond-Operand Expression-Stmt");
+
+        Pair pair114 = new Pair("Cond-Stmt-tmp", ">");
+        table.put(pair114, "Cond-Operand Expression-Stmt");
+
+        Pair pair115 = new Pair("Cond-Stmt-tmp", "<");
+        table.put(pair115, "Cond-Operand Expression-Stmt");
+
+        ///////////
+
+        Pair pair116 = new Pair("Cond-Operand", "==");
+        table.put(pair116, "==");
+
+        Pair pair117 = new Pair("Cond-Operand", ">=");
+        table.put(pair117, ">=");
+
+        Pair pair118 = new Pair("Cond-Operand", "<=");
+        table.put(pair118, "<=");
+
+        Pair pair119 = new Pair("Cond-Operand", "<");
+        table.put(pair119, "<");
+
+        Pair pair120 = new Pair("Cond-Operand", ">");
+        table.put(pair120, ">");
+
+        Pair pair121 = new Pair("Cond-Operand", "!=");
+        table.put(pair121, "!=");
+
+        /////////////
+
+        Pair pair122 = new Pair("Loop-Stmt", "while");
+        table.put(pair122, "while ( Cond-Stmt ) Single-Stmt");
+
+        Pair pair123 = new Pair("Loop-Stmt", "do");
+        table.put(pair123, "do Single-Stmt while ( Cond-Stmt ) End");
+
+        Pair pair124 = new Pair("Loop-Stmt", "for");
+        table.put(pair124, "for ( for-Stmt ; Cond-Stmt ; for-steps ) Single-Stmt");
+
+        ///////////
+
+        Pair pair125 = new Pair("for-Stmt", "int");
+        table.put(pair125, "type id = Expression-Stmt");
+
+        Pair pair126 = new Pair("for-Stmt", "id");
+        table.put(pair126, "id");
+
+        Pair pair127 = new Pair("for-Stmt", "float");
+        table.put(pair127, "type id = Expression-Stmt");
+
+        Pair pair128 = new Pair("for-Stmt", "char");
+        table.put(pair128, "type id = Expression-Stmt");
+
+        /////////
+
+        Pair pair129 = new Pair("for-steps", "id");
+        table.put(pair129, "id steps");
+
+        //////////////
+
+        Pair pair130 = new Pair("steps", "++");
+        table.put(pair130, "++");
+
+        Pair pair131 = new Pair("steps", "--");
+        table.put(pair131, "--");
+
+        Pair pair132 = new Pair("steps", "=");
+        table.put(pair132, "Calculator Variable");
+
+        Pair pair133 = new Pair("steps", "+=");
+        table.put(pair133, "Calculator Variable");
+
+        Pair pair134 = new Pair("steps", "-=");
+        table.put(pair134, "Calculator Variable");
+
+        Pair pair135 = new Pair("steps", "*=");
+        table.put(pair135, "Calculator Variable");
+
+        Pair pair136 = new Pair("steps", "/=");
+        table.put(pair136, "Calculator Variable");
+
+        Pair pair137 = new Pair("steps", "%=");
+        table.put(pair137, "Calculator Variable");
+
+        //////////
+
+        Pair pair138 = new Pair("Variable", "id");
+        table.put(pair138, "id");
+
+        Pair pair139 = new Pair("Variable", "digit");
+        table.put(pair139, "digit");
+
+        //////////
+
+        Pair pair140 = new Pair("Skip-Stmt", "break");
+        table.put(pair140, "break End");
+
+        Pair pair141 = new Pair("Skip-Stmt", "continue");
+        table.put(pair141, "continue End");
+
+        Pair pair142 = new Pair("Skip-Stmt", "return");
+        table.put(pair142, "return Expression-Stmt End");
     }
 }
