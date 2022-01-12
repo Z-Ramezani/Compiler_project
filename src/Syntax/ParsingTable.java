@@ -1,16 +1,13 @@
 package Syntax;
 
 import javafx.util.Pair;
-
-import java.util.Collection;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
 public class ParsingTable {
 
     HashMap <Pair<String , String>, String> table = new HashMap <Pair<String, String>, String>() ;
     public void setTable () {
+
         Pair pair1 = new Pair("Main-Stmt", "int");
         table.put(pair1, "int X");
 
@@ -314,9 +311,6 @@ public class ParsingTable {
         Pair pair90 = new Pair("Combine-Stmt", "{");
         table.put(pair90, "{ T");
 
-        Pair pair91 = new Pair("Combine-Stmt", "{");
-        table.put(pair91, "{ T");
-
         ////////
 
         Pair pair92 = new Pair("T", "int");
@@ -371,10 +365,11 @@ public class ParsingTable {
         Pair pair107 = new Pair("Cond-Stmt", "digit");
         table.put(pair107, "Expression-Stmt Cond-Stmt-tmp");
 
-        Pair pair108 = new Pair("Cond-Stmt", ")");
-        table.put(pair108, "e");
 
         /////////////
+
+        Pair pair108 = new Pair("Cond-Stmt-tmp", ")");
+        table.put(pair108, "e");
 
         Pair pair109 = new Pair("Cond-Stmt-tmp", ";");
         table.put(pair109, "e");
@@ -493,3 +488,4 @@ public class ParsingTable {
         table.put(pair142, "return Expression-Stmt End");
     }
 }
+
