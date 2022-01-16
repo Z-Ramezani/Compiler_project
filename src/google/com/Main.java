@@ -1,5 +1,8 @@
 package google.com;
 ///debug4
+import Syntax.Parser;
+import Syntax.ParsingTable;
+
 import javax.swing.*;
 import java.io.File;
 import java.util.HashSet;
@@ -602,7 +605,16 @@ public class Main {
         setKeyword_type(keyword_type);
         setKeyword_no_type(keyword_no_type);
         symbolTable.setKeyword(keyword);
+        System.out.println(10);
         Extractor.extract(a);
+        System.out.println(11);
+
+        ParsingTable parsingTable = new ParsingTable();
+        parsingTable.setTable();
+        Parser parser = new Parser();
+        LexicalAnalysis lexicalAnalysis = new LexicalAnalysis();
+        parser.parsing(lexicalAnalysis.token_error , parsingTable.table);
+
 
 
 

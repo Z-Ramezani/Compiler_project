@@ -1,7 +1,10 @@
 package Syntax;
 
 import javafx.util.Pair;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Set;
 
 public class ParsingTable {
 
@@ -108,8 +111,6 @@ public class ParsingTable {
         Pair pair30 = new Pair("bracket", "}");
         table.put(pair30, "} bracket-tmp");
 
-        Pair pair31 = new Pair("bracket", "e");
-        table.put(pair31, "e");
 
         /////
 
