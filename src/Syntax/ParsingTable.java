@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class ParsingTable {
 
-    HashMap <Pair<String , String>, String> table = new HashMap <Pair<String, String>, String>() ;
+    public HashMap <Pair<String , String>, String> table = new HashMap <Pair<String, String>, String>() ;
     public void setTable () {
 
         Pair pair1 = new Pair("Main-Stmt", "int");
