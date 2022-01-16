@@ -290,11 +290,8 @@ public class ParsingTable {
         Pair pair84 = new Pair("Initialization-Stmt-tmp", ";");
         table.put(pair84, "End");
 
-        Pair pair85 = new Pair("Initialization-Stmt-tmp", ";");
+        Pair pair85 = new Pair("Initialization-Stmt-tmp", "=");
         table.put(pair85, "= Expression-Stmt End");
-
-        Pair pair86 = new Pair("Initialization-Stmt-tmp", ";");
-        table.put(pair86, "= Expression-Stmt End");
 
         ////////
 

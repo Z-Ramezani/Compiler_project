@@ -1,7 +1,6 @@
 package google.com;
 ///debug4
 
-import javax.sound.midi.Soundbank;
 import javax.swing.*;
 import java.awt.*;
 import java.io.BufferedReader;
@@ -15,41 +14,39 @@ import static google.com.Main.*;
 
 public class Extractor {
 
+    public LexicalAnalysis lexicalAnalysis=new LexicalAnalysis();
     public static int count = 32;
     //extract is used to read the file line by line and give each line to lexicalAnalysis.
-    public static void extract(File f){
+    public  void extract(File f){
+        ArrayList<String> res = new ArrayList<String>();
         try {
             ArrayList<String> result=new ArrayList<String>();
             BufferedReader reader = new BufferedReader(new FileReader(f+"//Lex.txt"));
             while (reader.ready()) {
 
                 String line = reader.readLine();
-                LexicalAnalysis v=new LexicalAnalysis();
-                ArrayList<String> res= v.lexicalAnalysis(line);
-                for (String s:res)result.add(s);
+                res= lexicalAnalysis.lexFunction(line);
+
             }
-            prints(result);
+            prints(res);
             reader.close();
         } catch(IOException e) { System.out.print("Error"); }
     }
-    public static  void prints(ArrayList<String > result){
+    public String[][] prints(ArrayList<String > result){
         HashMap symbol=symbolTable.getSymbol_table();
-
+        String [][] token_type=new String[result.size()][2];
         String [] columns = {"Type" ,"Token"};
-        Object [][] token_type=new Object[result.size()][2];
+
         int i=0 ;
 
         for (String s: result) {
             if (operator.contains(s))  token_type[i][0]="Operator";
             else if (keyword.contains(s)) token_type[i][0]="Keyword";
-            else if (digit.contains(s))  token_type[i][0]="Number";
+            else if (isNumber(s).equals("Number"))  token_type[i][0]="Number";
+            else if (isNumber(s).equals("Error"))  token_type[i][0]="Error";
             else{
                 ///  if (symbol.containsValue(s))
-
-
                 s = symbolTable.check2(s);
-
-
                 token_type[i][0]="Identifier";
 
             }
@@ -68,5 +65,18 @@ public class Extractor {
         table.getTableHeader().setFont(new Font("SansSerif", Font.BOLD, 14));
         table.setBackground(new Color(79, 255, 255));
         table.setFont(new Font("Bahnschrift SemiLight SemiConde", Font.PLAIN, 17));
+        return token_type;
+    }
+
+    static String isNumber(String s){
+        if (digit.contains(String.valueOf(s.charAt(0)))){
+            for (int i = 1; i < s.length(); i++) {
+                if (!digit.contains(String.valueOf(s.charAt(0)))){
+                    return "Error";
+                }
+            }
+            return "Number";
+        }
+        return "";
     }
 }

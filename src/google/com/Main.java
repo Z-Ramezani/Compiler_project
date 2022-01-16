@@ -594,7 +594,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        File a = getDataFolderFromSystem();
+        File file = getDataFolderFromSystem();
         //setting information we need to run this program like list of letters, digits, keywords, operators, DFA table and symbol table.
         setLetter(letter);
         setDigit(digit);
@@ -606,15 +606,15 @@ public class Main {
         setKeyword_no_type(keyword_no_type);
         symbolTable.setKeyword(keyword);
         System.out.println(10);
-        Extractor.extract(a);
+        Extractor extractor = new Extractor();
+        extractor.extract(file);
         System.out.println(11);
 
         ParsingTable parsingTable = new ParsingTable();
         parsingTable.setTable();
         Parser parser = new Parser();
-        LexicalAnalysis lexicalAnalysis = new LexicalAnalysis();
-        parser.parsing(lexicalAnalysis.token_error , parsingTable.table);
-
+        parser.parsing(extractor.lexicalAnalysis.token_error , parsingTable.table , extractor.prints(extractor.lexicalAnalysis.token_error));
+        System.out.println(13);
 
 
 
