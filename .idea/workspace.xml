@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fec96549-6ee2-4fcc-98f0-0a79b6bf7ce1" name="Default Changelist" comment="parsing table edited">
+      <change afterPath="$PROJECT_DIR$/src/Syntax/ParseTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Syntax/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Syntax/ParsingTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/ParsingTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/google/com/Extractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/Extractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/google/com/LexicalAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/LexicalAnalysis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/google/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +36,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -141,6 +141,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -154,14 +155,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/google/com/Main.java</url>
-          <line>615</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Syntax/Parser.java</url>
           <line>29</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/google/com/Main.java</url>
+          <line>616</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

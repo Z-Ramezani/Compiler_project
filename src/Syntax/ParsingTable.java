@@ -220,10 +220,10 @@ public class ParsingTable {
         table.put(pair63, "*");
 
         Pair pair64 = new Pair("Operator", "/");
-        table.put(pair61, "/");
+        table.put(pair64, "/");
 
         Pair pair65 = new Pair("Operator", "%");
-        table.put(pair61, "%");
+        table.put(pair65, "%");
 
         ///////
 

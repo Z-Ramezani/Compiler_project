@@ -10,10 +10,10 @@ import java.util.Stack;
 
 public class Parser {
 
+    ArrayList action [] = new ArrayList[3];
+
     public void parsing (ArrayList<String> tokens , HashMap<Pair<String , String>, String> table , String[][] token_type){
 
-
-        ArrayList action [] = new ArrayList[3];
         action[0] = new ArrayList();
         action[1] = new ArrayList();
         action[2] = new ArrayList();
@@ -37,13 +37,16 @@ public class Parser {
 
                     Pair pair1 = new Pair(stack.peek() , input);
                     body = table.get(pair1);
-                    action[0].add("output");
-                    action[1].add(stack.pop());
-                    body_tmp = body.split(" ");
-                    for (int i =body_tmp.length-1  ; i >=0  ; i--){
-                        stack.push(body_tmp[i]);
+                    if (!body.equals("e")) {
+                        action[0].add("output");
+                        action[1].add(stack.pop());
+                        body_tmp = body.split(" ");
+                        for (int i = body_tmp.length - 1; i >= 0; i--) {
+                            stack.push(body_tmp[i]);
+                        }
+                        action[2].add(body_tmp);
                     }
-                    action[2].add(body_tmp);
+                    else stack.pop();
                 }
                 else{
                     if (stack.peek().equals(input)){

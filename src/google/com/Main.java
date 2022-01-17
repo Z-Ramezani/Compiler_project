@@ -605,16 +605,17 @@ public class Main {
         setKeyword_type(keyword_type);
         setKeyword_no_type(keyword_no_type);
         symbolTable.setKeyword(keyword);
-        System.out.println(10);
+        //System.out.println(10);
+
         Extractor extractor = new Extractor();
         extractor.extract(file);
-        System.out.println(11);
+        //System.out.println(11);
 
         ParsingTable parsingTable = new ParsingTable();
         parsingTable.setTable();
         Parser parser = new Parser();
         parser.parsing(extractor.lexicalAnalysis.token_error , parsingTable.table , extractor.prints(extractor.lexicalAnalysis.token_error));
-        System.out.println(13);
+        //System.out.println(13);
 
 
 
