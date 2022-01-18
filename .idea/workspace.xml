@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fec96549-6ee2-4fcc-98f0-0a79b6bf7ce1" name="Default Changelist" comment="parsing table edited">
-      <change afterPath="$PROJECT_DIR$/src/Syntax/ParseTree.java" afterDir="false" />
+    <list default="true" id="af02878c-8616-4d15-ba49-e753ffafa082" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler_project/Syntax/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler_project/Syntax/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler_project/google/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler_project/google/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Syntax/ParseTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/ParseTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Syntax/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Syntax/ParsingTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/ParsingTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/google/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,38 +14,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="22mg0GFBw0VScVb9pRKwuXOMHW2" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="23rmNZ2AmkAMd6xv6H4I2BLyS32" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="google.com.Main" />
       <module name="Compiler_project" />
       <extension name="coverage">
@@ -57,118 +43,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+    <configuration default="true" type="JetRunConfigurationType">
       <module name="Compiler_project" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParsingTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Syntax.ParsingTable" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="Compiler_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Syntax.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.ParsingTable" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fec96549-6ee2-4fcc-98f0-0a79b6bf7ce1" name="Default Changelist" comment="" />
-      <created>1640447951738</created>
+      <changelist id="af02878c-8616-4d15-ba49-e753ffafa082" name="Changes" comment="" />
+      <created>1642500544977</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1640447951738</updated>
+      <updated>1642500544977</updated>
     </task>
-    <task id="LOCAL-00001" summary="Test2">
-      <created>1640491220754</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1640491220754</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Debugging 5">
-      <created>1640496184733</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1640496184733</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add pseudocode">
-      <created>1640502238504</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1640502238504</updated>
-    </task>
-    <task id="LOCAL-00004" summary="test">
-      <created>1642337072100</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1642337072100</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Test2" />
-    <MESSAGE value="Debugging 5" />
-    <MESSAGE value="add pseudocode" />
-    <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Syntax/Parser.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/google/com/Main.java</url>
-          <line>616</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="stack" />
+        <watch expression="parser.action[1]" />
       </configuration>
     </watches-manager>
   </component>

@@ -615,7 +615,7 @@ public class Main {
         parsingTable.setTable();
         Parser parser = new Parser();
         parser.parsing(extractor.lexicalAnalysis.token_error , parsingTable.table , extractor.prints(extractor.lexicalAnalysis.token_error));
-        //System.out.println(13);
+        System.out.println(13);
 
 
 
