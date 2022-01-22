@@ -1,5 +1,6 @@
 package Syntax;
 
+import Semantic.SemanticAnalysis;
 import javafx.util.Pair;
 
 import javax.swing.*;
@@ -14,13 +15,16 @@ public class Parser {
 
     ArrayList[] action = new ArrayList[3];
     JFrame f;
+    Stack<String> match = new Stack<String>();
+    Tree<String> parseTree = new Tree<String>("Main-Stmt");
+    Tree<String> subTree = new Tree<String>("=");
     public void parsing (ArrayList<String> tokens , HashMap<Pair<String , String>, String> table , String[][] token_type){
 
         f=new JFrame();
         action[0] = new ArrayList<String>();
         action[1] = new ArrayList<String>();
         action[2] = new ArrayList<String[]>();
-        Tree<String> parseTree = new Tree<String>("Main-Stmt");
+
         DefaultMutableTreeNode parent1=new DefaultMutableTreeNode("Main-Stmt");
         Stack <Tree.Node<String>> stack = new Stack<Tree.Node<String>>();
         Stack <DefaultMutableTreeNode> stack1 = new Stack<DefaultMutableTreeNode>();
@@ -88,9 +92,13 @@ public class Parser {
                 }
             }
         }
+        for (String i:tokens) {
+            match.push(i);
+        }
+        createParseTree(match);
         JTree jt=new JTree(parent1);
         f.add(jt);
-        f.setSize(1000,1000);
+        f.setSize(100000,100000);
         f.setVisible(true);
     }
     boolean containNonTerminal (String peek , HashMap<Pair<String , String>, String> table){
@@ -103,4 +111,65 @@ public class Parser {
         }
         return false;
     }
+    public void createParseTree(Stack<String> match) {
+
+        Stack<String> matched = new Stack<String>();
+        while (!match.isEmpty()){
+            matched.push(match.pop());
+        }
+
+
+        while (!matched.isEmpty()) {
+
+            String pop = matched.pop();
+            if (matched.peek().equals("=")){
+
+
+                Tree.Node<String> child = new Tree.Node<String>();
+
+                child.setData(pop);
+                child.setParent(subTree.getRoot());
+                ArrayList<Tree.Node<String>> children = new ArrayList<Tree.Node<String>>();
+                children.add(child);
+                subTree.getRoot().setChildren(children);
+                matched.pop();
+                subTree.setRoot(findChildren(subTree.getRoot() , matched));
+                SemanticAnalysis semanticAnalysis = new SemanticAnalysis();
+                semanticAnalysis.checkError(subTree);
+            }
+        }
+    }
+
+    private Tree.Node<String> findChildren(Tree.Node<String> root, Stack<String> matched) {
+        String pop = matched.pop();
+        if (matched.peek().equals("+") || matched.peek().equals("-") || matched.peek().equals("*") ||
+                matched.peek().equals("%") || matched.peek().equals("/") ){
+
+            Tree.Node<String> parent = new Tree.Node<String>();
+            parent.setData(matched.pop());
+            parent.setParent(root);
+            root.getChildren().add(parent);
+
+            Tree.Node<String> child = new Tree.Node<String>();
+            child.setData(pop);
+            //child.setParent(parent);
+            ArrayList<Tree.Node<String>> children=new ArrayList<Tree.Node<String>>();
+            children.add(child);
+            parent.setChildren(children);
+
+            root=findChildren(parent , matched);
+        }
+        else {
+            if (matched.peek().equals(";")){
+                Tree.Node<String> child = new Tree.Node<String>();
+                child.setData(pop);
+                //child.setParent(root);
+                root.getChildren().add(child);
+                matched.pop();
+                return root;
+            }
+        }
+        return root;
+    }
 }
+
