@@ -86,12 +86,13 @@ Steps:
 - [x] Check data types by finding the leave of the syntax tree and comparing their type.If in one oerational statement 2 or more different data types are found, the program prints Semantinc Error. (the types thet we check in this part are "int", "float", "double", "char")
 
 ## How to run this project
-Create Lex.txt and copy Sample input or any input you want.run the java program and just select where your Lex.txt is.
-For exmaple if your text file is on Desktop you should select Desktop and click on Open button then you can see the result.
+Create Lex(i).txt (i can be any number begins from 0) and copy Sample input or any input you want.run the java program and just select the folder where your different lex.txt files are.
+For exmaple if you want to test 2 code you can create lex0.txt and lex1.txt and when you run the program choose the folder where you have saves these two files and it will check both of your files.
 
 ## Refrences
 - [How to write your own C compiler from scratch with Python!](https://medium.com/@pasi_pyrro/how-to-write-your-own-c-compiler-from-scratch-with-python-90ab84ffe071#f6ed)
 
 - Compilers Principles, Techniques, & Tools Seccond Edition
 
+- https://www.javatpoint.com/java-jtree
 
