@@ -49,7 +49,7 @@ for(int i=0;i<3;i++){
 
 }
 ```
-output
+part of output
 
 ![parse_tree](https://user-images.githubusercontent.com/89459958/150696232-ba6e92f3-58ca-41e2-ba32-931538992b9c.PNG)
 
