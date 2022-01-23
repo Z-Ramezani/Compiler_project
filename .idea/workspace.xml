@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af02878c-8616-4d15-ba49-e753ffafa082" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semantic/SemanticAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic/SemanticAnalysis.java" afterDir="false" />
+    <list default="true" id="af02878c-8616-4d15-ba49-e753ffafa082" name="Changes" comment="project completed.">
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler_project/Semantic/SemanticAnalysis.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler_project/Semantic/SemanticAnalysis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler_project/Syntax/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler_project/Syntax/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler_project/Syntax/ParsingTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler_project/Syntax/ParsingTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler_project/google/com/Extractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler_project/google/com/Extractor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Compiler_project/google/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler_project/google/com/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Syntax/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Syntax/ParsingTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/ParsingTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/google/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642884055161</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="project completed.">
+      <created>1642925533247</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642925533247</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,7 +104,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="completing tree and JTree" />
     <MESSAGE value="semantic analysis and syntax tree completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="semantic analysis and syntax tree completed." />
+    <MESSAGE value="project completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="project completed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

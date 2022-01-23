@@ -104,8 +104,10 @@ public class Parser {
 
         JTree jt=new JTree(parent1);
         jt.setBounds(30, 40, 200, 300);
-        f.add(jt);
-        f.setSize(100000,100000);
+        JScrollPane jScrollPane = new JScrollPane(jt);
+        f.add(jScrollPane);
+        //f.add(jt);
+        f.setSize(500,500);
         f.setVisible(true);
 
         createParseTree(match);

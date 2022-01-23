@@ -36,10 +36,10 @@ public class SemanticAnalysis {
 
         if (hasInteger(leaf)){
             if (hasFloatOrDouble(leaf)){
-                System.out.println("Error");
+                System.out.println("Semantic Error");
             }
             if (hasCharacter(leaf)){
-                System.out.println("Error");
+                System.out.println("Semantic Error");
             }
             if (hasId(leaf)){
                 for (String i:leaf) {
@@ -47,7 +47,7 @@ public class SemanticAnalysis {
                         for (int j = 0; j < Main.symbolTable.symbol_table.size(); j++) {
                             if (Main.symbolTable.symbol_table.get(j).get(2).equals(i)){
                                 if (!Main.symbolTable.symbol_table.get(j).get(1).equals("int")){
-                                    System.out.println("Error");
+                                    System.out.println("Semantic Error");
                                 }
                             }
                         }
@@ -77,14 +77,14 @@ public class SemanticAnalysis {
                                     if (Main.symbolTable.symbol_table.get(j).get(1).equals("float")) {
                                         if (tempDouble != 1) {
                                             tempFloat = 1;
-                                        } else System.out.println("Error");
+                                        } else System.out.println("Semantic Error");
                                     }
                                     if (!Main.symbolTable.symbol_table.get(j).get(1).equals("float")) {
                                         if (Main.symbolTable.symbol_table.get(j).get(1).equals("double")) {
                                             if (tempFloat != 1) {
                                                 tempDouble = 1;
-                                            } else System.out.println("Error");
-                                        } else System.out.println("Error");
+                                            } else System.out.println("Semantic Error");
+                                        } else System.out.println("Semantic Error");
                                     }
 
                                 }
@@ -108,7 +108,7 @@ public class SemanticAnalysis {
                                 for (int j = 0; j < Main.symbolTable.symbol_table.size(); j++) {
                                     if (Main.symbolTable.symbol_table.get(j).get(2).equals(i)){
                                         if (!Main.symbolTable.symbol_table.get(j).get(1).equals("char")){
-                                            System.out.println("Error");
+                                            System.out.println("Semantic Error");
                                         }
                                     }
                                 }
@@ -128,7 +128,7 @@ public class SemanticAnalysis {
                     for (String i:type) {
                         for (int j = 1; j < type.size(); j++) {
                             if (!i.equals(type.get(j))){
-                                System.out.println("Error");
+                                System.out.println("Semantic Error");
                             }
                         }
                     }
