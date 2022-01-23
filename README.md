@@ -23,6 +23,7 @@ for(int i=0;i<3;i++){
 }
 ```
 output
+
 ![output_lexical](https://user-images.githubusercontent.com/89459958/150696130-ceaada3a-77a2-4d55-a2e0-934e5430ad32.PNG)
 
 For this part we used a DFA and it's table to tokenize the code. 
@@ -49,6 +50,8 @@ for(int i=0;i<3;i++){
 }
 ```
 output
+
+![parse_tree](https://user-images.githubusercontent.com/89459958/150696232-ba6e92f3-58ca-41e2-ba32-931538992b9c.PNG)
 
 ### Implementation of syntax analyser
 Steps:
