@@ -95,11 +95,13 @@ public class Parser {
         for (String i:tokens) {
             match.push(i);
         }
-        createParseTree(match);
+
         JTree jt=new JTree(parent1);
         f.add(jt);
         f.setSize(100000,100000);
         f.setVisible(true);
+
+        //createParseTree(match);
     }
     boolean containNonTerminal (String peek , HashMap<Pair<String , String>, String> table){
 

@@ -17,26 +17,43 @@ public class Extractor {
     public LexicalAnalysis lexicalAnalysis=new LexicalAnalysis();
     public static int count = 32;
     //extract is used to read the file line by line and give each line to lexicalAnalysis.
-    public  void extract(File f){
+    public  void extract(File f, int j){
         ArrayList<String> res = new ArrayList<String>();
         try {
             ArrayList<String> result=new ArrayList<String>();
-            BufferedReader reader = new BufferedReader(new FileReader(f+"//Lex.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader(f+"//Lex"+j+".txt"));
             while (reader.ready()) {
 
                 String line = reader.readLine();
                 res= lexicalAnalysis.lexFunction(line);
 
             }
-            prints(res);
+            prints(setTokenType(res));
             reader.close();
         } catch(IOException e) { System.out.print("Error"); }
     }
-    public String[][] prints(ArrayList<String > result){
-        HashMap symbol=symbolTable.getSymbol_table();
+    public String[][] prints(String[][] token_type){
+        String [] columns = {"Type" ,"Token"};
+        int i=0 ;
+
+        JTable table = new JTable(token_type,columns);
+        JFrame f = new JFrame();
+        f.setTitle("LexicalAnalysis");
+        table.setBounds(30, 40, 200, 300);
+        JScrollPane sp = new JScrollPane(table);
+        f.add(sp);
+        f.setSize(500, 200);
+        f.setVisible(true);
+        table.getTableHeader().setFont(new Font("SansSerif", Font.BOLD, 14));
+        table.setBackground(new Color(79, 255, 255));
+        table.setFont(new Font("Bahnschrift SemiLight SemiConde", Font.PLAIN, 17));
+        return token_type;
+    }
+
+    public String[][] setTokenType (ArrayList<String> result) {
+
         String [][] token_type=new String[result.size()][2];
         String [] columns = {"Type" ,"Token"};
-
         int i=0 ;
 
         for (String s: result) {
@@ -50,21 +67,10 @@ public class Extractor {
                 token_type[i][0]="Identifier";
 
             }
-           // if (token_type[i][0].equals("Identifier")) token_type[i][1] = sid;
+            // if (token_type[i][0].equals("Identifier")) token_type[i][1] = sid;
             token_type[i][1]=s;
             i++;
         }
-        JTable table = new JTable(token_type,columns);
-        JFrame f = new JFrame();
-        f.setTitle("LexicalAnalysis");
-        table.setBounds(30, 40, 200, 300);
-        JScrollPane sp = new JScrollPane(table);
-        f.add(sp);
-        f.setSize(500, 200);
-        f.setVisible(true);
-        table.getTableHeader().setFont(new Font("SansSerif", Font.BOLD, 14));
-        table.setBackground(new Color(79, 255, 255));
-        table.setFont(new Font("Bahnschrift SemiLight SemiConde", Font.PLAIN, 17));
         return token_type;
     }
 

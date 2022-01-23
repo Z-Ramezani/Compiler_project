@@ -5,7 +5,9 @@ import Syntax.ParsingTable;
 
 import javax.swing.*;
 import java.io.File;
+import java.sql.SQLOutput;
 import java.util.HashSet;
+import java.util.Scanner;
 
 
 public class Main {
@@ -605,19 +607,23 @@ public class Main {
         setKeyword_type(keyword_type);
         setKeyword_no_type(keyword_no_type);
         symbolTable.setKeyword(keyword);
-        //System.out.println(10);
 
-        Extractor extractor = new Extractor();
-        extractor.extract(file);
-        //System.out.println(11);
+        System.out.println("Input value of n:");
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
 
-        ParsingTable parsingTable = new ParsingTable();
-        parsingTable.setTable();
-        Parser parser = new Parser();
-        parser.parsing(extractor.lexicalAnalysis.token_error , parsingTable.table , extractor.prints(extractor.lexicalAnalysis.token_error));
-        System.out.println(13);
+        for (int i = 0; i < n; i++) {
+            Extractor extractor = new Extractor();
+            extractor.extract(file, i);
+            //System.out.println(11);
 
-
+            ParsingTable parsingTable = new ParsingTable();
+            parsingTable.setTable();
+            Parser parser = new Parser();
+            //System.out.println(12);
+            parser.parsing(extractor.lexicalAnalysis.token_error , parsingTable.table , extractor.setTokenType(extractor.lexicalAnalysis.token_error));
+            //System.out.println(13);
+        }
 
     }
 

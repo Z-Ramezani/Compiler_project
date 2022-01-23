@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af02878c-8616-4d15-ba49-e753ffafa082" name="Changes" comment="semantic analysis and syntax tree completed.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Compiler_project/Syntax/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Compiler_project/Syntax/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Syntax/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Syntax/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/google/com/Extractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/Extractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/google/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/google/com/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +92,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="completing tree and JTree" />
@@ -95,6 +100,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="semantic analysis and syntax tree completed." />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/google/com/Extractor.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/google/com/Extractor.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/google/com/Extractor.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Syntax.Tree" memberName="root" />
