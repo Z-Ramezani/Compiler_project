@@ -20,7 +20,7 @@ public class ParsingTable {
         //////////
 
         Pair pair3 = new Pair("X", "main");
-        table.put(pair3, "main ( ) { Single-Stmt");
+        table.put(pair3, "main ( ) Single-Stmt");
 
         ////////
 
@@ -254,7 +254,7 @@ public class ParsingTable {
         table.put(pair73, "Operator Expression-Stmt");
 
         Pair pair74 = new Pair("E", "%");
-        table.put(pair70, "Operator Expression-Stmt");
+        table.put(pair74, "Operator Expression-Stmt");
 
         Pair pair75 = new Pair("E", "==");
         table.put(pair75, "e");

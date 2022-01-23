@@ -12,15 +12,15 @@ import java.util.Scanner;
 
 public class Main {
 
-    static HashSet<String> operator = new HashSet<String>();
-    static HashSet<String> letter = new HashSet<String>();
-    static HashSet<String> digit = new HashSet<String>();
+    public static HashSet<String> operator = new HashSet<String>();
+    public static HashSet<String> letter = new HashSet<String>();
+    public static HashSet<String> digit = new HashSet<String>();
     public static HashSet<String> keyword = new HashSet<String>();
     public static HashSet<String> keyword_type = new HashSet<String>();
     public static HashSet<String> keyword_no_type = new HashSet<String>();
     static HashSet<Integer> final_state = new HashSet<Integer>();
     static int[][] dfa_state = new int[71][25];
-    static SymbolTable symbolTable = new SymbolTable();
+    public static SymbolTable symbolTable = new SymbolTable();
     private static File getDataFolderFromSystem() {
         JFileChooser chooser = new JFileChooser();
         chooser.setDragEnabled(true);
@@ -615,14 +615,10 @@ public class Main {
         for (int i = 0; i < n; i++) {
             Extractor extractor = new Extractor();
             extractor.extract(file, i);
-            //System.out.println(11);
-
             ParsingTable parsingTable = new ParsingTable();
             parsingTable.setTable();
             Parser parser = new Parser();
-            //System.out.println(12);
             parser.parsing(extractor.lexicalAnalysis.token_error , parsingTable.table , extractor.setTokenType(extractor.lexicalAnalysis.token_error));
-            //System.out.println(13);
         }
 
     }
